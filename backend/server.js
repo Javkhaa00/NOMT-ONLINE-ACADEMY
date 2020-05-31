@@ -1,30 +1,36 @@
 var express = require("express");
 var bodyParser = require("body-parser");
 
-// const mongoose = require('mongoose');
-// mongoose.connect('mongodb://localhost:27017/gfg');
-// var db = mongoose.connection;
-// db.on('error', console.log.bind(console, "connection error"));
-// db.once('open', function (callback) {
-//     console.log("connection succeeded");
-// })
+const MongoClient = require('mongodb').MongoClient
+const url = 'mongodb://127.0.0.1:27017'
+
+const dbName = 'database'
+let db
+
+MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
+  if (err) return console.log(err)
+
+  // Storing a reference to the database so you can use it later
+  db = client.db(dbName)
+  console.log(`Connected MongoDB: ${url}`)
+  console.log(`Database: ${dbName}`)
+})
 
 var app = express()
-
 
 app.use(bodyParser.json());
 // app.use(express.static('public'));
 app.use(bodyParser.urlencoded({
-    extended: true
+  extended: true
 }));
 
 app.get('/', (req, res) => {
-    res.send('hi')
-    console.log('hello world')
+  res.send('hi')
+  console.log('hello world')
 })
 
-app.post('/sign-up', function (req, res) {
-  const UI = {
+app.post('/sign-up', async function (req, res) {
+  const userData = {
     "first_name": req.body.first_name,
     "second_name": req.body.second_name,
     "email": req.body.email,
@@ -36,27 +42,35 @@ app.post('/sign-up', function (req, res) {
     "month": req.body.month,
     "day": req.body.day
   }
-    console.log(UI.first_name, UI.second_name, UI.email, UI.pass, UI.phone, UI.school, UI.class_number, UI.year, UI.month, UI.day);
-    // res.send("success")
-    res.redirect('/sign-in')
+  console.log(userData.first_name, userData.second_name, userData.email, userData.pass, userData.phone, userData.school, userData.class_number, userData.year, userData.month, userData.day);
+
+  await db.collection('users').insertOne(userData)
+  // res.send("success")
+  res.redirect('/sign-in')
 })
 
-app.post('/sign-in', function (req, res) {
-  const UI = {
+app.post('/sign-in', async function (req, res) {
+  const userData = {
     "email": req.body.email,
     "pass": req.body.password
   }
-    console.log(UI.email, UI.pass);
-    // res.send("success")
-    res.redirect('/')
+  console.log(userData.email, userData.pass);
+  const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
+  if (!user) {
+    // User was not found
+    res.send('invalid email or password')
+    return;
+  }
+
+  res.send("success");
 })
 
 app.options('/url...', (req, res, next) => {
-    res.header('Access-Control-Allow-Origin', "*");
-    res.header('Access-Control-Allow-Methods', 'POST');
-    res.header("Access-Control-Allow-Headers", "accept, content-type");
-    res.header("Access-Control-Max-Age", "1728000");
-    return res.sendStatus(200);
+  res.header('Access-Control-Allow-Origin', "*");
+  res.header('Access-Control-Allow-Methods', 'POST');
+  res.header("Access-Control-Allow-Headers", "accept, content-type");
+  res.header("Access-Control-Max-Age", "1728000");
+  return res.sendStatus(200);
 });
 
 const PORT = process.env.PORT || 5000
