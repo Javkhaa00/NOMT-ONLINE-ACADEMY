@@ -4,7 +4,7 @@ WORKDIR /app
 
 COPY ./ ./
 
-RUN yarn install --force
+RUN yarn install
 
 EXPOSE 5000
 
