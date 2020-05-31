@@ -13,9 +13,9 @@ const Lessons = () => {
       <Header />
       <div className="main">
         <div className="name">
-          {COURSES.map(course => (
+          {COURSES.map((course, index) => (
             <h2 
-              key={course}
+              key={index}
               className={`Lesson-course-title ${selectedLessonId === course.id && 'bold'}`} id="satSubject" 
               onClick={() => setSelectedLessonId(course.id)}
             >

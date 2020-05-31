@@ -6,28 +6,47 @@ import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
 
 const Header = () => {
-  const { userInformation } = useContext(DataContext)
+  const { userInformation, setUserInformation } = useContext(DataContext)
 
   useEffect(() => {
-    var elems = document.querySelectorAll('.dropdown-trigger')
-    var instances = M.Dropdown.init(elems, {
+    const elems = document.querySelectorAll('.dropdown-trigger')
+    const instances = M.Dropdown.init(elems, {
       constrainWidth: false,
       coverTrigger: false
     })
     console.log(instances)
   }, [])
-//   document.addEventListener('DOMContentLoaded', function () {})
+
+  useEffect(() => {
+    if (userInformation.page !== '') {
+      document.getElementById(userInformation.page).style.fontWeight = "bold"
+    }
+  }, [userInformation])
 
   return (
     <nav className=''>
-      <Link to='/' className='brand-logo'>
+      <Link to='/' className='brand-logo' onClick={() => setUserInformation({ ...userInformation, page: ''})}>
         <img alt='logo' src={logo} />
       </Link>
       <div id='nav-mobile' className='navbar left'>
-        <Link className='black-text titles' to='/lesson'>
+        <Link
+          className='black-text titles'
+          onClick={() =>
+            setUserInformation({ ...userInformation, page: 'lesson' })
+          }
+          id='lesson'
+          to='/lesson'
+        >
           Сургалтууд
         </Link>
-        <Link className='black-text titles' to='/teachers'>
+        <Link
+          className='black-text titles'
+          onClick={() =>
+            setUserInformation({ ...userInformation, page: 'aboutUs' })
+          }
+          id='aboutUs'
+          to='/teachers'
+        >
           Бидний тухай
         </Link>
         <p
@@ -42,7 +61,14 @@ const Header = () => {
         >
           Холбоо барих
         </p>
-        <Link className='black-text titles' to='/payment'>
+        <Link
+          className='black-text titles'
+          onClick={() =>
+            setUserInformation({ ...userInformation, page: 'payment' })
+          }
+          id='payment'
+          to='/payment'
+        >
           Төлбөр тооцоо
         </Link>
       </div>
@@ -57,10 +83,24 @@ const Header = () => {
           </Link>
         ) : (
           <>
-            <Link className='buttonSignIn black-text' to='/sign-in'>
+            <Link
+              className='buttonSignIn black-text'
+              onClick={() =>
+                setUserInformation({ ...userInformation, page: 'signIn' })
+              }
+              id='signIn'
+              to='/sign-in'
+            >
               Нэвтрэх |{' '}
             </Link>
-            <Link className='buttonSignUp black-text' to='/sign-up'>
+            <Link
+              className='buttonSignUp black-text'
+              onClick={() =>
+                setUserInformation({ ...userInformation, page: 'signUp' })
+              }
+              id='signUp'
+              to='/sign-up'
+            >
               Бүртгүүлэх
             </Link>
           </>

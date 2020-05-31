@@ -19,7 +19,8 @@ function App () {
   // fetch()
   const [userInformation, setUserInformation] = useState({
     name: '',
-    email: ''
+    email: '',
+    page: ''
   })
 
   return (

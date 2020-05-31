@@ -8,6 +8,9 @@ nav {
         margin-left: 40px;
         font-size: 19px !important;
         font-weight: 500;
+        &:hover {
+            font-weight: bold;
+        }
     }
     img {
         margin-left: 22px;
@@ -27,6 +30,9 @@ nav {
         font-size: 19px !important;
         font-weight: 500;
         text-transform: uppercase;
+        &:hover {
+            font-weight: bold;
+        }
     }
     .buttonSignIn {
         position: absolute;
@@ -35,6 +41,9 @@ nav {
         font-size: 19px !important;
         font-weight: 500;
         text-transform: uppercase;
+        &:hover {
+            font-weight: bold;
+        }
     }
     .headerProfile {
         width: 10vw;
