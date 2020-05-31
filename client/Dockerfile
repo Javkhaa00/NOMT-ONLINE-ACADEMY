@@ -11,10 +11,10 @@ COPY ./ ./
 
 # RUN yarn --pure-lockfile
 
-RUN yarn install
+RUN npm install
 
 # RUN ls
 
 EXPOSE 3000
 
-CMD yarn start
+CMD npm start
