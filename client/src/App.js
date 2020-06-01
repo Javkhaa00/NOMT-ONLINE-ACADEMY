@@ -10,6 +10,7 @@ import {
 import Teachers from './components/TeachersList/Teachers'
 import TeacherPro from './components/TeacherProfile/TeacherPro'
 import Lesson from './components/Lessons/Lesson.jsx'
+import Class from './components/Class/Class.jsx'
 import SignUp from './components/signUp/signUp.js'
 import SignIn from './components/signIn/signIn.js'
 import Payment from './components/Payment/Payment'
@@ -35,6 +36,9 @@ function App () {
           </Route>
           <Route path='/lesson'>
             <Lesson />
+          </Route>
+          <Route path='/class'>
+            <Class/>
           </Route>
           <Route path='/payment'>
             <Payment />
