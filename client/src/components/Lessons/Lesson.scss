@@ -4,56 +4,14 @@
 
 .Teachers {
   height: 900px;
-  font-family: 'Fira sans';
+  font-family: "Fira sans";
   margin-bottom: 0;
   width: auto;
-  // height: 330vw;
   background-image: url("../assets/bc.png");
   background-size: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.title {
-  margin-top: 12vw;
-  h1 {
-    margin-top: 0;
-    margin-bottom: 16px;
-    font-size: 4vw;
-    font-weight: bold;
-  }
-}
-
-.titleImage {
-  margin-top: 10vw;
-  // box-shadow: none;
-}
-
-.down_button {
-  margin-top: 5vw;
-  padding: 0 !important;
-  height: 50px;
-  width: 50px;
-  // margin-left: 48% !important;
-}
-
-.sofware_intro {
-  margin-top: 10vw;
-  margin-bottom: 10vw;
-  h4 {
-    font-weight: bold;
-    font-size: 2.6vw;
-  }
-}
-
-.lessons_title {
-  width: 46vw !important;
-  margin-left: 0 !important;
-}
-
-.lessonCardText {
-  background-color: white;
 }
 
 .card-title {
@@ -70,7 +28,6 @@
 
 .name {
   margin-top: 95px;
-  //   margin-left: 270px !important;
   h2 {
     height: 23px;
     width: 195px;
@@ -84,17 +41,9 @@
   }
 }
 
-// .card .card-image img{
-//     margin-top: -90px;
-//     top: -330px;
-//     left: 600px;
-// }
-
 .lessons {
   margin-top: 100px;
   width: 800px;
-  //   display: flex;
-  //   margin-left: 20px
 }
 
 .lessonCard {
@@ -127,7 +76,7 @@
 }
 
 .general {
-    width: 100px;
+  width: 100px;
   position: absolute;
   top: 70px;
   left: 25px;
@@ -138,7 +87,7 @@
 }
 
 .uni {
-    width: 200px;
+  width: 200px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.13px;
@@ -146,4 +95,77 @@
   position: absolute;
   top: 159px;
   left: 25px;
+}
+
+@media only screen and (max-width: 1399px) {
+  .Teachers {
+    height: 720px;
+  }
+
+  .card-title {
+    height: 160px;
+  }
+
+  .main {
+    display: flex;
+    width: 904px;
+    height: 336px;
+    margin-bottom: 136px;
+  }
+
+  .name {
+    margin-top: 76px;
+    h2 {
+      height: 18px;
+      width: 156px;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      line-height: 18px;
+    }
+  }
+
+  .lessons {
+    margin-top: 80px;
+    width: 640px;
+  }
+
+  .lessonCard {
+    height: 177px !important;
+    width: 205px;
+    border-radius: 16px;
+  }
+
+  .avatarImg {
+    top: 49px;
+    height: 52px;
+    width: 52px;
+    border-radius: 117px;
+    border: 3.2px solid #fff;
+  }
+  .teacher {
+    top: 80px;
+    padding: 0 !important;
+    height: 20px;
+    margin-top: 17px;
+    margin-left: 19px;
+    font-size: 17px !important;
+  }
+
+  .general {
+    width: 80px;
+    top: 56px;
+    left: 20px;
+    font-size: 9.6px;
+    letter-spacing: 0.1px;
+    line-height: 11px;
+  }
+
+  .uni {
+    width: 160px;
+    font-size: 9.6px;
+    letter-spacing: 0.1px;
+    line-height: 11px;
+    top: 127px;
+    left: 20px;
+  }
 }

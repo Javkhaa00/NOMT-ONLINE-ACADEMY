@@ -18,6 +18,7 @@ const Header = () => {
   }, [])
 
   useEffect(() => {
+    console.log(userInformation)
     if (userInformation.page !== '') {
       document.getElementById(userInformation.page).style.fontWeight = "bold"
     }

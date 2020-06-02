@@ -7,15 +7,13 @@ import { Link } from 'react-router-dom'
 
 const SingIn = () => {
     const {userInformation, setUserInformation} = useContext(DataContext)
-    // const { handleSubmit, register, errors } = useForm();
+    
     const singInClicked = () => {
         const result = Check()
         if (result.check === true) {
-            setUserInformation(result.userInformation)
+            setUserInformation({...userInformation, name: result.userInformation.name, email: result.userInformation.email})
             console.log(userInformation, result.userInformation)
             document.forms["sign-in"].submit();
-            // window.history.pushState({page: 1},{page: 1}, "/", "")
-        } else {
         }
     }
     return (
