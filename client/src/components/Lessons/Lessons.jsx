@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import Header from "../Header/Header";
-import "./Lesson.scss";
-import LessonCard from "./LessonCard";
-import { COURSES, LESSON_UNITS} from './LessonData';
+import "./Lessons.scss";
+import LessonCard from "./LessonsCard";
+import { COURSES, LESSON_UNITS} from './LessonsData';
 
 
 const Lessons = () => {
@@ -14,13 +14,13 @@ const Lessons = () => {
       <div className="main">
         <div className="name">
           {COURSES.map((course, index) => (
-            <div 
+            <h2 
               key={index}
               className={`Lesson-course-title ${selectedLessonId === course.id && 'bold'}`} id="satSubject" 
               onClick={() => setSelectedLessonId(course.id)}
             >
               {course.title}
-            </div>
+            </h2>
           ))}
         </div>
         <div

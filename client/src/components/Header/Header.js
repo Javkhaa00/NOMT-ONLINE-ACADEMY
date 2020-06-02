@@ -18,7 +18,6 @@ const Header = () => {
   }, [])
 
   useEffect(() => {
-    console.log(userInformation)
     if (userInformation.page !== '') {
       document.getElementById(userInformation.page).style.fontWeight = "bold"
     }
@@ -33,10 +32,10 @@ const Header = () => {
         <Link
           className='black-text titles'
           onClick={() =>
-            setUserInformation({ ...userInformation, page: 'lesson' })
+            setUserInformation({ ...userInformation, page: 'lessons' })
           }
-          id='lesson'
-          to='/lesson'
+          id='lessons'
+          to='/lessons'
         >
           Сургалтууд
         </Link>

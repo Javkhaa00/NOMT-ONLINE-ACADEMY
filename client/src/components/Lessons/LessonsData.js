@@ -11,29 +11,29 @@ export const COURSES = [
 export const LESSON_UNITS = {
     satreasoning: [
       {
-        specific: "READING",
-        general: "SAT REASONING",
+        specific: "reading",
+        general: "sat reasoning",
         teacher: "ЦЭЛМЭГ",
         uni: "UC Berkeley",
         avatar: "tselmeg"
       },
       {
-        specific: "WRITTING",
-        general: "SAT REASONING",
+        specific: "writing",
+        general: "sat reasoning",
         teacher: "ЦЭЛМЭГ",
         uni: "UC Berkeley",
         avatar: "tselmeg"
       },
       {
-        specific: "MATH",
-        general: "SAT REASONING",
+        specific: "math",
+        general: "sat reasoning",
         teacher: "ЭЗЭНБААТАР",
         uni: "KANSAS UNIVERSITY",
         avatar: "ezenbaatar"
       },
       {
-        specific: "ESSEY",
-        general: "SAT REASONING",
+        specific: "essey",
+        general: "sat reasoning",
         teacher: "",
         uni: "",
         avatar: ""
@@ -41,15 +41,15 @@ export const LESSON_UNITS = {
     ],
     satsubjects: [
       {
-        specific: "PHYSICS",
-        general: "SAT SUBJECTS",
+        specific: "physics",
+        general: "sat subject",
         teacher: "ЦОЛМОН",
         uni: "MIT",
         avatar: ""
       },
       {
-        specific: "MATH LVL 2",
-        general: "SAT SUBJECTS",
+        specific: "math lvl 2",
+        general: "sat subject",
         teacher: "ХҮСЛЭН",
         uni: "UC BERKELEY",
         avatar: "huslen"
@@ -58,15 +58,15 @@ export const LESSON_UNITS = {
     ],
     ieltstoefl: [
       {
-        specific: "READING",
-        general: "TOEFL",
+        specific: "reading",
+        general: "toefl",
         teacher: "БАЯСАГЛАН",
         uni: "NYU SHANGHAI",
         avatar: "bayasgalan"
       },
       {
-        specific: "LISTENING",
-        general: "IELTS",
+        specific: "listening",
+        general: "ielts",
         teacher: "МАНДАХ",
         uni: "MELBOURNE UNIVERSITY",
         avatar: "mandah"
@@ -75,22 +75,22 @@ export const LESSON_UNITS = {
     ],
     monbusho: [
       {
-        specific: "MATH",
-        general: "MONBUSHO",
+        specific: "math",
+        general: "monbusho",
         teacher: "САЙНБИЛЭГТ",
         uni: "The university of Tokyo Osaka",
         avatar: "sainbilegt"
       },
       {
-        specific: "CHEMISRTY",
-        general: "MONBUSHO",
+        specific: "chemistry",
+        general: "monbusho",
         teacher: "БИЛГҮҮН",
         uni: "",
         avatar: "bilguun"
       },
       {
-        specific: "JAPANESE",
-        general: "MONBUSHO",
+        specific: "japanese",
+        general: "monbusho",
         teacher: "ОТГОНТӨГС",
         uni: "",
         avatar: "otgontugs"
@@ -98,29 +98,29 @@ export const LESSON_UNITS = {
     ],
     hsk: [
       {
-        specific: "HSK-1",
-        general: "HSK",
+        specific: "hsk-1",
+        general: "hsk",
         teacher: "АНУ",
         uni: "Tongji Medical University of Hust",
         avatar: "anu"
       },
       {
-        specific: "HSK-2",
-        general: "HSK",
+        specific: "hsk-2",
+        general: "hsk",
         teacher: "АНУ",
         uni: "Tongji Medical University of Hust",
         avatar: "anu"
       },
       {
-        specific: "HSK-3",
-        general: "HSK",
+        specific: "hsk-3",
+        general: "hsk",
         teacher: "АНУ",
         uni: "Tongji Medical University of Hust",
         avatar: "anu"
       },
       {
-        specific: "HSK-4",
-        general: "HSK",
+        specific: "hsk-4",
+        general: "hsk",
         teacher: "АНУ",
         uni: "Tongji Medical University of Hust",
         avatar: "anu"
@@ -128,15 +128,15 @@ export const LESSON_UNITS = {
     ],
     undergraduate: [
       {
-        specific: "A-P",
-        general: "JAPANESE UNDERGRADUATE",
+        specific: "a-p",
+        general: "japanese undergraduated",
         teacher: "САЙНБИЛЭГТ",
         uni: "The University of Osaka",
         avatar: "sianbilegt"
       },
       {
-        specific: "A-P",
-        general: "US UNDERGRADUATE",
+        specific: "a-p",
+        general: "us undergraduated",
         teacher: "НАМУУНГОО",
         uni: "HARVARD",
         avatar: "namuungoo"
@@ -144,29 +144,29 @@ export const LESSON_UNITS = {
     ],
     programm: [
       {
-        specific: "PHYTON",
-        general: "PROGRAMMING",
+        specific: "phyton",
+        general: "programming",
         teacher: "",
         uni: "",
         avatar: ""
       },
       {
-        specific: "HTML",
-        general: "PROGRAMMING",
+        specific: "html",
+        general: "programming",
         teacher: "МӨНХЖАВХЛАН",
         uni: "",
         avatar: "javkhaa"
       },
       {
-        specific: "CSS",
-        general: "PROGRAMMING",
+        specific: "css",
+        general: "programming",
         teacher: "МӨНХЖАВХЛАН",
         uni: "",
         avatar: "javkhaa"
       },
       {
-        specific: "C++",
-        general: "PROGRAMMING",
+        specific: "c++",
+        general: "programming",
         teacher: "ЗОЛБОО",
         uni: ""
       }

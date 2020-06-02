@@ -1,43 +1,22 @@
-export const TEACHERS = {
-  satreasoning: [
-    {
-      teacher: "ЦЭЛМЭГ",
-      uni: "UC Berkeley",
-      score: "",
-      avatar: "tselmeg",
-      price: "130000₮"
-    },
-    {
-      teacher: "ЭЗЭНБААТАР",
-      uni: "KANSAS UNIVERSITY",
-      score: "",
-      avatar: "ezenbaatar",
-      price: "120000₮"
-    }
-  ],
-  satsubjects: [
-    {
-      teacher: "ЦОЛМОН",
-      uni: "MIT",
-      score: "",
-      avatar: "tsolmon",
-      price: "140000₮"
-    },
-    {
-      teacher: "ХҮСЛЭН",
-      uni: "UC BERKELEY",
-      score: "",
-      avatar: "huslen",
-      price: "120000"
-    },
-    {
-      teacher: "ЦОЛМОН",
-      uni: "MIT",
-      score: "",
-      avatar: "tsolmon",
-      price: "140000₮"
-    }
-  ]
+export const lessondata = () => {
+  return {
+    name: 'Э. Ану',
+    image: 'anu',
+    university: 'Tongji Medical University of Hust',
+    score: 'Test score: HSK6-256',
+    payed: 'yes',
+    price: "150'000₮",
+    lessons: [
+      {name: 'HSK-1-1', link: '', time: '00.30.05'},
+      {name: 'HSK-1-2', link: '', time: '00.27.09'},
+      {name: 'HSK-1-3', link: '', time: '00.23.00'},
+      {name: 'HSK-1-4', link: '', time: '00.41.23'},
+      {name: 'HSK-1-5', link: '', time: '00.30.05'},
+      {name: 'HSK-1-6', link: '', time: '00.27.09'},
+      {name: 'HSK-1-7', link: '', time: '00.41.23'},
+      {name: 'HSK-1-8', link: '', time: '00.23.00'},
+      {name: 'HSK-1-9', link: '', time: '00.30.05'},
+      {name: 'HSK-1-10', link: '', time: '00.41.23'},
+    ]
+  }
 };
-
-export const CLASSES = [];

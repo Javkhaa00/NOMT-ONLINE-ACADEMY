@@ -1,6 +1,6 @@
-.something {
-    height: 900px !important;
-    font-family: 'Fira sans';
+.teacherLessons {
+    height: 100vh !important;
+    font-family: "Fira sans";
     margin-bottom: 0;
     width: auto;
     background-image: url("../assets/bc.png");
@@ -8,4 +8,163 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.bigBigContainer {
+    margin-top: 120px;
+    width: 1080px;
+    height: 585px;
+    display: flex;
+}
+
+.lessonSection {
+    height: 585px;
+    width: 703px;
+    overflow: auto;
+    &::-webkit-scrollbar {
+        width: 10px;
+    }
+}
+
+.teacherLesson {
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 17px;
+    height: 50px;
+    width: 688px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    .lesson {
+        flex-grow: 10;
+        padding-left: 30px;
+        margin: 0;
+        height: 25px;
+        color: #333;
+        font-size: 21px;
+        font-weight: 500;
+        letter-spacing: 0.42px;
+        line-height: 25px;
+    }
+    .time {
+        flex-grow: 1;
+    }
+}
+
+.teacherSection {
+    height: 258px;
+    width: 350px;
+    border-radius: 20px;
+    margin-left: 27px;
+    background-color: white;
+    .teacherSectionPro {
+        width: 311px;
+        margin-left: 27px;
+        margin-top: 24px;
+        display: flex;
+        .lessonTeacherImage {
+            height: 129px;
+            width: 111px;
+        }
+        .teacherSectionProTitle {
+            width: 180px;
+            margin-left: 18px;
+            .name {
+                margin: 0;
+                height: 36px;
+                font-size: 30px;
+                font-weight: 700;
+                letter-spacing: 1px;
+                line-height: 36px;
+            }
+            .teacherText {
+                width: 190px;
+                margin: 0;
+                margin-top: 6px;
+                height: 14px;
+                font-size: 12px;
+                font-weight: 500;
+                letter-spacing: 0.13px;
+                line-height: 14px;
+            }
+        }
+    }
+    .price {
+        margin-left: 27px;
+        margin-top: 35px;
+        height: 36px;
+        font-size: 30px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        line-height: 36px;
+    }
+}
+
+@media only screen and (max-width: 1339px) {
+    .bigBigContainer {
+        margin-top: 96px;
+        width: 864px;
+        height: 468px;
+    }
+
+    .lessonSection {
+        height: 468px;
+        width: 562px;
+    }
+
+    .teacherLesson {
+        margin-bottom: 12px;
+        border-radius: 13px;
+        height: 40px;
+        width: 550px;
+        .lesson {
+            padding-left: 24px;
+            height: 20px;
+            font-size: 16px;
+            letter-spacing: 0.38px;
+            line-height: 20px;
+        }
+    }
+
+    .teacherSection {
+        height: 206px;
+        width: 280px;
+        border-radius: 16px;
+        margin-left: 21px;
+        .teacherSectionPro {
+            width: 248px;
+            margin-left: 21px;
+            margin-top: 19px;
+            .lessonTeacherImage {
+                height: 103px;
+                width: 88px;
+            }
+            .teacherSectionProTitle {
+                width: 144px;
+                margin-left: 14px;
+                .name {
+                    height: 28px;
+                    font-size: 24px;
+                    letter-spacing: 0.8px;
+                    line-height: 28px;
+                }
+                .teacherText {
+                    width: 152px;
+                    margin-top: 5px;
+                    height: 11px;
+                    font-size: 9px;
+                    letter-spacing: 0.13px;
+                    line-height: 11px;
+                }
+            }
+        }
+        .price {
+            margin-left: 21px;
+            margin-top: 28px;
+            height: 29px;
+            font-size: 24px;
+            letter-spacing: 0.8px;
+            line-height: 29px;
+        }
+    }
 }

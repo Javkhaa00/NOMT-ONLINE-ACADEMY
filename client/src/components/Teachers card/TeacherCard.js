@@ -50,18 +50,6 @@ const TeacherCard = cin => {
         />
       )
 
-    // if (image === 'ashid')
-    //   return <img className='teacherProfilePicture' alt='ashid' src={ashid} />
-
-    // if (image === 'bayarjargal')
-    //   return (
-    //     <img
-    //       className='teacherProfilePicture'
-    //       alt='bayarjargal'
-    //       src={bayarjargal}
-    //     />
-    //   )
-
     if (image === 'ezenbaatar')
       return (
         <img
