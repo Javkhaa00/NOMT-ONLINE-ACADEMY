@@ -18,7 +18,7 @@ export const LESSON_UNITS = {
         avatar: "tselmeg"
       },
       {
-        specific: "writing",
+        specific: "writting",
         general: "sat reasoning",
         teacher: "ЦЭЛМЭГ",
         uni: "UC Berkeley",
