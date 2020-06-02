@@ -15,6 +15,7 @@ import otgontugs from "../assets/teachers/otgontugs.png";
 import sainbilegt from "../assets/teachers/sainbilegt.png";
 import tselmeg from "../assets/teachers/tselmeg.png";
 import tsolmon from "../assets/teachers/tsolmon.png";
+import './Lesson.scss'
 
 const LessonCard = props => {
   const { specific, general, teacher, uni, avatar } = props;
@@ -43,14 +44,19 @@ const LessonCard = props => {
         <div className="card-image">
           <img alt="background" className="background" src={background} />
           <span className="card-title">
-            <span className="teacher card-title black-text">{teacher}</span>
-            <span className="lesson card-title-1 black-text">{specific}</span>
-            <span className="general black-text">{general}</span>
-            <span className="uni black-text">{uni}</span>
+            <div>
+              <span className="lesson card-title-1 black-text">{specific}</span> <br />
+              <div className="general black-text">{general}</div> <br />
+            </div>
+            <div className='lai'>
+              <span className="teacher black-text">{teacher}</span> <br/>
+              <div className="uni black-text">{uni}</div>
+            </div>
+
           </span>
           <a
             href="/#"
-            className="avatarImg btn-floating halfway-fab waves-effect waves-light white"
+            className="avatarImg btn-floating halfway-fab white"
           >
             {avatarImg()}
           </a>

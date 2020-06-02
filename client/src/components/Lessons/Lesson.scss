@@ -3,7 +3,7 @@
 }
 
 .Teachers {
-  height: 900px;
+  height: 1000px;
   font-family: "Fira sans";
   margin-bottom: 0;
   width: auto;
@@ -22,18 +22,17 @@
   display: flex;
   position: relative;
   width: 1130px;
-  height: 420px;
-  margin-bottom: 170px;
 }
 
 .name {
   margin-top: 95px;
-  h2 {
-    height: 23px;
-    width: 195px;
+  width: 195px;
+  div {
     font-size: 19px;
     letter-spacing: 0.38px;
-    line-height: 23px;
+    line-height: 25px;
+    margin: 0 0 40px 0;
+    overflow: hidden;
     cursor: pointer;
     &:focus {
       font-weight: bold;
@@ -42,21 +41,21 @@
 }
 
 .lessons {
-  margin-top: 100px;
-  width: 800px;
+  margin: 100px 0px 0px 54px;
+  width: 870px;
 }
 
 .lessonCard {
-  margin-left: 0 !important;
-  margin-top: 0;
+  margin: 0 30px 27px 0px !important;
   height: 222px !important;
-  width: 257px;
+  width: 257px !important;
   border-radius: 20px;
-  padding: 0;
+  padding: 0 !important;
+  cursor: pointer;
 }
 
 .avatarImg {
-  top: 62px;
+  top: 75px;
   box-sizing: border-box;
   height: 65px;
   width: 65px;
@@ -76,96 +75,232 @@
 }
 
 .general {
-  width: 100px;
-  position: absolute;
-  top: 70px;
-  left: 25px;
   font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.13px;
   line-height: 14px;
+}
+.card {
+  height: 222px;  
+  width: 257px;
+  margin: 0;
 }
 
 .uni {
-  width: 200px;
   font-size: 12px;
+  text-transform: uppercase;
   font-weight: 500;
   letter-spacing: 0.13px;
   line-height: 14px;
   position: absolute;
-  top: 159px;
-  left: 25px;
+}
+.background {
+  height: 222px !important;
+  width: 257px !important;
+}
+
+.card-title{
+  height: 222px !important;
+  width: 257px !important;
+  padding: 19px 0px 28px 19px !important;
+}
+
+.card-image {
+  height: 222px;
+  width: 257px;
+}
+
+.lai {
+  margin-top: 34px;
 }
 
 @media only screen and (max-width: 1399px) {
+  // .Teachers {
+  //   height: 720px;
+  // }
+
+  // .card-title {
+  //   height: 177.6px;
+  //   padding: 15.2px 0px 15.2px 22.4px;
+  // }
+  // .background {
+  //   width: 204.8px !important;
+  //   height: 177.6px !important;
+  // }
+  // .main {
+  //   display: flex;
+  //   width: 904px;
+  //   height: 336px;
+  //   margin-bottom: 136px;
+  // }
+
+  // .name {
+  //   margin-top: 76px;
+  //   h2 {
+  //     height: 18px;
+  //     width: 156px;
+  //     font-size: 15px;
+  //     letter-spacing: 0.3px;
+  //     line-height: 18px;
+  //   }
+  // }
+
+  // .lessons {
+  //   margin-top: 80px;
+  //   width: 640px;
+  // }
+
+  // .lessonCard {
+  //   height: 177px !important;
+  //   width: 205px;
+  //   border-radius: 16px;
+  // }
+
+  // .avatarImg {
+  //   top: 49px;
+  //   height: 52px;
+  //   width: 52px;
+  //   border-radius: 117px;
+  //   border: 3.2px solid #fff;
+  // }
+  // .teacher {
+  //   top: 80px;
+  //   padding: 0 !important;
+  //   height: 20px;
+  //   margin-top: 17px;
+  //   margin-left: 19px;
+  //   font-size: 17px !important;
+  // }
+
+  // .general {
+  //   width: 80px;
+  //   top: 56px;
+  //   left: 20px;
+  //   font-size: 9.6px;
+  //   letter-spacing: 0.1px;
+  //   line-height: 11px;
+  // }
+
+  // .uni {
+  //   width: 160px;
+  //   font-size: 9.6px;
+  //   letter-spacing: 0.1px;
+  //   line-height: 11px;
+  //   top: 127px;
+  //   left: 20px;
+  // }
+
+  .Lesson-course-title:hover {
+    font-weight: bold;
+  }
+  
   .Teachers {
-    height: 720px;
+    height: 900px;
+    font-family: "Fira sans";
+    margin-bottom: 0;
+    width: auto;
+    background-image: url("../assets/bc.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
-
-  .card-title {
-    height: 160px;
-  }
-
+  
   .main {
     display: flex;
-    width: 904px;
-    height: 336px;
-    margin-bottom: 136px;
+    position: relative;
+    width: 930px;
+    margin-left: 13px;
   }
-
+  
   .name {
-    margin-top: 76px;
-    h2 {
-      height: 18px;
-      width: 156px;
-      font-size: 15px;
-      letter-spacing: 0.3px;
-      line-height: 18px;
+    margin-top: 100px;
+    width: 196px;
+    div {
+      font-size: 18px;
+      letter-spacing: 0.38px;
+      line-height: 20px;
+      margin: 0 0 33px 0;
+      overflow: hidden;
+      cursor: pointer;
+      &:focus {
+        font-weight: bold;
+      }
     }
   }
-
+  
   .lessons {
-    margin-top: 80px;
-    width: 640px;
+    margin: 100px 0px 0px 40px;
+    width: 690px;
   }
-
+  
   .lessonCard {
-    height: 177px !important;
-    width: 205px;
-    border-radius: 16px;
-  }
-
-  .avatarImg {
-    top: 49px;
-    height: 52px;
-    width: 52px;
-    border-radius: 117px;
-    border: 3.2px solid #fff;
-  }
-  .teacher {
-    top: 80px;
+    margin: 0 24px 27px 0px !important;
+    height: 178px !important;
+    width: 205px !important;
+    border-radius: 20px;
     padding: 0 !important;
-    height: 20px;
-    margin-top: 17px;
-    margin-left: 19px;
-    font-size: 17px !important;
+    cursor: pointer;
   }
-
+  
+  .avatarImg {
+    top: 57px;
+    box-sizing: border-box;
+    height: 60px;
+    width: 60px;
+    border-radius: 147px;
+    border: 4px solid #fff;
+    box-shadow: none;
+  }
+  
+  .lesson {
+    font-weight: bold;
+    top: 0px;
+  }
+  
+  .teacher {
+    font-weight: bold !important;
+    top: 100px;
+  }
+  
   .general {
-    width: 80px;
-    top: 56px;
-    left: 20px;
     font-size: 9.6px;
-    letter-spacing: 0.1px;
-    line-height: 11px;
+    font-weight: 400;
+    letter-spacing: 0.13px;
+    line-height: 14px;
+  }
+  .card {
+    height: 178px;  
+    width: 205px;
+    margin: 0;
+  }
+  
+  .uni {
+    font-size: 9.6px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.13px;
+    line-height: 14px;
+    position: absolute;
+  }
+  .background {
+    height: 178px !important;
+    width: 205px !important;
+  }
+  
+  .card-title{
+    font-size: 19px !important;
+    height: 178px !important;
+    width: 205px !important;
+    padding: 15.2px 0px 15.2px 22.4px !important;
+  }
+  
+  .card-image {
+    height: 178px;
+    width: 205px;
   }
 
-  .uni {
-    width: 160px;
-    font-size: 9.6px;
-    letter-spacing: 0.1px;
-    line-height: 11px;
-    top: 127px;
-    left: 20px;
+  .lai {
+    margin-top: 27px;
   }
 }

@@ -14,13 +14,13 @@ const Lessons = () => {
       <div className="main">
         <div className="name">
           {COURSES.map((course, index) => (
-            <h2 
+            <div 
               key={index}
               className={`Lesson-course-title ${selectedLessonId === course.id && 'bold'}`} id="satSubject" 
               onClick={() => setSelectedLessonId(course.id)}
             >
               {course.title}
-            </h2>
+            </div>
           ))}
         </div>
         <div
