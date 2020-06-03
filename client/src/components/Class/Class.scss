@@ -55,8 +55,9 @@
     height: 258px;
     width: 350px;
     border-radius: 20px;
-    margin-left: 27px;
+    margin-left: 730px;
     background-color: white;
+    position: fixed;
     .teacherSectionPro {
         width: 311px;
         margin-left: 27px;
@@ -100,7 +101,7 @@
     }
 }
 
-@media only screen and (max-width: 1339px) {
+@media only screen and (max-width: 1399px) {
     .bigBigContainer {
         margin-top: 96px;
         width: 864px;
@@ -130,7 +131,8 @@
         height: 206px;
         width: 280px;
         border-radius: 16px;
-        margin-left: 21px;
+        margin-left: 583px;
+        position: fixed;
         .teacherSectionPro {
             width: 248px;
             margin-left: 21px;

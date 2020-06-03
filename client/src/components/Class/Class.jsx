@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import Header from '../Header/Header'
 import './Class.scss'
 import anu from '../assets/teachers/anu.png'
@@ -15,8 +15,13 @@ import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
 import { lessondata } from './ClassData'
+import DataContext from '../mainContext'
 
 const Class = () => {
+
+  const { userInformation } = useContext(DataContext);
+  console.log(userInformation)
+
   const Data = lessondata()
 
   const avatarImg = () => {
