@@ -15,6 +15,7 @@ import SignUp from './components/signUp/signUp.js'
 import SignIn from './components/signIn/signIn.js'
 import Payment from './components/Payment/Payment'
 import DataContext from './components/mainContext'
+import LessonVideo from './components/lessonvideo/lessonVideo'
 
 function App () {
   // fetch()
@@ -51,6 +52,9 @@ function App () {
           </Route>
           <Route path='/payment'>
             <Payment />
+          </Route>
+          <Route path='/video'>
+            <LessonVideo />
           </Route>
           <Route exact path='/'>
             <FrontPage />
