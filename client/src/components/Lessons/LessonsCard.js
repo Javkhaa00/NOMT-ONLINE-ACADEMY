@@ -43,7 +43,7 @@ const LessonsCard = props => {
 
   return (
     <div className=' col l0 lessonCard'>
-      <Link className='card/video' to={"/class/" + generalNospace + "/" + specific}>
+      <Link className='card' to={"/class/" + generalNospace + "/" + specific}>
         <div className='card-image'>
           <img alt='background' className='background' src={background} />
           <span className='card-title'>
