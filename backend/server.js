@@ -5,6 +5,7 @@ const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://127.0.0.1:27017'
 
 const dbName = 'nomt'
+var UI = {};
 let db
 
 // var mydb = connect('host[:5000]/mydb');
@@ -26,9 +27,13 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.get('/', (req, res) => {
-  res.send('hi')
-  console.log('hello world')
+app.get('/getData', (req, res) => {
+  res.send(UI)
+})
+
+app.get('/logOut', (req, res) => {
+  UI = {}
+  res.redirect('/')
 })
 
 app.post('/sign-up', async function (req, res) {
@@ -58,14 +63,17 @@ app.post('/sign-in', async function (req, res) {
   }
   console.log(userData.email, userData.password);
   const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
+
   if (!user) {
     // User was not found
     console.log("not found");
-    res.send('invalid email or password') 
+    res.redirect('/sign-in/error')
     return;
   }
-
-  res.send("success");
+  UI = {
+    name: user.second_name,
+  }
+  res.redirect('/')
 })
 
 app.options('/url...', (req, res, next) => {

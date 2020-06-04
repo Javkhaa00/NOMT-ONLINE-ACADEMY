@@ -4,6 +4,7 @@ import M from 'materialize-css/dist/js/materialize'
 import './Header.scss'
 import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
+import Axios from 'axios'
 
 const Header = () => {
   const { userInformation, setUserInformation } = useContext(DataContext)
@@ -22,7 +23,7 @@ const Header = () => {
     if (document.getElementById(page) !== null) {
       document.getElementById(page).style.fontWeight = "bold"
     }
-  }, [userInformation])
+  }, [])
 
   return (
     <nav className=''>
@@ -118,9 +119,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link style={{ paddingTop: '0' }} className='right' to='/#'>
+            <a style={{ paddingTop: '0' }} className='right' href="/" onClick={() => Axios.get('/logOut')}>
               LOG OUT
-            </Link>
+            </a>
           </li>
         </ul>
       </div>
