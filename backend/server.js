@@ -7,6 +7,8 @@ const url = 'mongodb://127.0.0.1:27017'
 const dbName = 'database'
 let db
 
+// var mydb = connect('host[:5000]/mydb');
+
 MongoClient.connect(url, { useNewUrlParser: true }, (err, client) => {
   if (err) return console.log(err)
 
@@ -52,10 +54,10 @@ app.post('/sign-up', async function (req, res) {
 app.post('/sign-in', async function (req, res) {
   const userData = {
     "email": req.body.email,
-    "pass": req.body.password
+    "password": req.body.password
   }
-  console.log(userData.email, userData.pass);
-  const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
+  console.log(userData.email, userData.password);
+  const user = await db.collection('users').findOne({ email: req.body.email, password: req.body.password });
   if (!user) {
     // User was not found
     res.send('invalid email or password')
