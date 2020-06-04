@@ -4,7 +4,7 @@ var bodyParser = require("body-parser");
 const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://127.0.0.1:27017'
 
-const dbName = 'database'
+const dbName = 'nomt'
 let db
 
 // var mydb = connect('host[:5000]/mydb');
@@ -47,7 +47,7 @@ app.post('/sign-up', async function (req, res) {
   console.log(userData.first_name, userData.second_name, userData.email, userData.pass, userData.phone, userData.school, userData.class_number, userData.year, userData.month, userData.day);
 
   await db.collection('users').insertOne(userData)
-  // res.send("success")
+  console.log("successful register")
   res.redirect('/sign-in')
 })
 
@@ -60,7 +60,8 @@ app.post('/sign-in', async function (req, res) {
   const user = await db.collection('users').findOne({ email: req.body.email, password: req.body.password });
   if (!user) {
     // User was not found
-    res.send('invalid email or password')
+    console.log("not found");
+    res.send('invalid email or password') 
     return;
   }
 
