@@ -16,10 +16,11 @@ const Header = () => {
     })
     console.log(instances)
   }, [])
-
+  
   useEffect(() => {
-    if (userInformation.page !== '') {
-      document.getElementById(userInformation.page).style.fontWeight = "bold"
+    const page = window.location.href.split('/')[window.location.href.split('/').length - 1];
+    if (document.getElementById(page) !== null) {
+      document.getElementById(page).style.fontWeight = "bold"
     }
   }, [userInformation])
 
@@ -42,9 +43,9 @@ const Header = () => {
         <Link
           className='black-text titles'
           onClick={() =>
-            setUserInformation({ ...userInformation, page: 'aboutUs' })
+            setUserInformation({ ...userInformation, page: 'teachers' })
           }
-          id='aboutUs'
+          id='teachers'
           to='/teachers'
         >
           Бидний тухай
@@ -86,9 +87,9 @@ const Header = () => {
             <Link
               className='buttonSignIn black-text'
               onClick={() =>
-                setUserInformation({ ...userInformation, page: 'signIn' })
+                setUserInformation({ ...userInformation, page: 'sign-in' })
               }
-              id='signIn'
+              id='sign-in'
               to='/sign-in'
             >
               Нэвтрэх |{' '}
@@ -96,9 +97,9 @@ const Header = () => {
             <Link
               className='buttonSignUp black-text'
               onClick={() =>
-                setUserInformation({ ...userInformation, page: 'signUp' })
+                setUserInformation({ ...userInformation, page: 'sign-up' })
               }
-              id='signUp'
+              id='sign-up'
               to='/sign-up'
             >
               Бүртгүүлэх

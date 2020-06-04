@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import Header from '../Header/Header'
 import './Class.scss'
+import pay from '../assets/pay.png'
 import anu from '../assets/teachers/anu.png'
 import bilguun from '../assets/teachers/bilguun.png'
 import ezenbaatar from '../assets/teachers/ezenbaatar.png'
@@ -62,43 +63,55 @@ const Class = () => {
               <p className="name">{Data.name}</p>
               <p className="teacherText" style={{ marginTop: '18px' }}>{Data.university}</p>
               <p className="teacherText">{Data.score}</p>
+              {userInformation.payed !== " " ? (
+                <img
+                  className="buy"
+                  src={pay}
+                  alt="pay"
+                />
+              ) : ('')}
+
             </div>
           </div>
-          {userInformation.name !== " " ? (
+          {userInformation.payed === ' ' ? (
             <>
-              <p className="price">{Data.price}</p>
-              <Link
-                className='button-signUp white-text'
-                onClick={() =>
-                  setUserInformation({ ...userInformation, page: 'signUp' })
-                }
-                id='signUp'
-                to='/sign-up'
-              >
-                Бүртгүүлэх
-            </Link>
+              {userInformation.name !== ' ' ? (
+                <>
+                  <p className="price">{Data.price}</p>
+                  <Link
+                    className='button-signUp white-text'
+                    onClick={() =>
+                      setUserInformation({ ...userInformation, page: 'signUp' })
+                    }
+                    id='signUp'
+                    to='/sign-up'
+                  >
+                    Бүртгүүлэх
+                  </Link>
+                </>
+              ) : (
+                  <>
+                    <p className="price">{Data.price}</p>
+                    <Link
+                      className='button-signUp white-text'
+                      onClick={() =>
+                        setUserInformation({ ...userInformation, page: 'payment' })
+                      }
+                      id='payment'
+                      to='/payment'
+                    >
+                      Худалдан авах
+                    </Link>
+                  </>
+                )}
             </>
-          ) : (
-              <>
-                <p className="price">{Data.price}</p>
-                <Link
-                  className='button-signUp white-text'
-                  onClick={() =>
-                    setUserInformation({ ...userInformation, page: 'signUp' })
-                  }
-                  id='payment'
-                  to='/payment'
-                >
-                  Худалдан авах
-              </Link>
-              </>
-            )}
-
-
+            ) : (
+              <p className="price">{Data.price}</p>
+          )}
 
         </div>
       </div>
-    </div>
+      </div>
   )
 }
 

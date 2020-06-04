@@ -109,6 +109,12 @@
     text-transform: initial;;
     font-weight: bold;
 }
+.buy {
+    margin-left: 83px;
+    margin-top: 14px;
+    width: 109px;
+    height: 19px;
+}
 
 @media only screen and (max-width: 1399px) {
     .bigBigContainer {
@@ -170,7 +176,7 @@
             }
         }
         .price {
-            margin: 21px 28px 20px;
+            margin: 20px 28px 20px;
             height: 29px;
             font-size: 24px;
             letter-spacing: 0.8px;
@@ -186,5 +192,11 @@
         font-size: 20px !important;
         text-transform: initial;;
         font-weight: bold;
+    }
+    .buy {
+        margin-left: 48px;
+        margin-top: 11px;
+        width: 109px;
+        height: 19px;
     }
 }

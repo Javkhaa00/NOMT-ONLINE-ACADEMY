@@ -117,6 +117,14 @@
   margin-top: 34px;
 }
 
+
+.payed {  
+  position: absolute !important;
+  margin: auto 0;
+  width: 109px !important;
+  height: 19px;
+}
+
 @media only screen and (max-width: 1399px) {
   .Lesson-course-title:hover {
     font-weight: bold;
@@ -231,5 +239,12 @@
 
   .lai {
     margin-top: 27px;
+  }
+
+  .payed {  
+    position: absolute !important;
+    margin: auto 0;
+    width: 87px !important;
+    height: 15px;
   }
 }

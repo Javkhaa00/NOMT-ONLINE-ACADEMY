@@ -22,7 +22,8 @@ function App () {
   const [userInformation, setUserInformation] = useState({
     name: '',
     email: '',
-    page: ''
+    page: '',
+    payed: ''
   })
 
   return (
