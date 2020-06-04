@@ -1,0 +1,15 @@
+.videoMain {
+    width: auto;
+    height: 100vh;
+    background-color: #86dbec;
+    margin-bottom: 0;
+    background: url("../assets/bc.png");
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.video {
+    margin-top: 100px;
+}
