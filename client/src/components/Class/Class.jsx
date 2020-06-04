@@ -65,7 +65,7 @@ const Class = () => {
               <p className="teacherText">{Data.score}</p>
               {userInformation.payed !== " " ? (
                 <img
-                  style={{ marginLeft: '48px', marginTop: '11px', width: '109px', height: '19px', }}
+                  className="buy"
                   src={pay}
                   alt="pay"
                 />

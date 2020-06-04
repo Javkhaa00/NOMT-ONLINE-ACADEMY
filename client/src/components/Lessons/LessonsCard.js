@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import background from '../assets/card.png'
 import anu from '../assets/teachers/anu.png'
 // import ashid from "../assets/teachers/ashid.png";
@@ -17,10 +17,13 @@ import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
 import './Lessons.scss'
 import { Link } from 'react-router-dom'
+import payed from '../assets/payed.png'
+import DataContext from '../mainContext'
 
 const LessonsCard = props => {
   const { specific, general, teacher, uni, avatar } = props
   const generalNospace = general.split(' ').length === 1 ? general : general.split(' ')[0] + general.split(' ')[1];
+  const { userInformation, setUserInformation } = useContext(DataContext);
 
   const avatarImg = () => {
     if (avatar === 'anu') return <img alt='anu' src={anu} />
@@ -46,6 +49,12 @@ const LessonsCard = props => {
       <Link className='card' to={"/class/" + generalNospace + "/" + specific}>
         <div className='card-image'>
           <img alt='background' className='background' src={background} />
+          {userInformation.payed !== " " ? (
+            <img className="payed" src={payed}/>
+          ) : (
+            " "
+          )}
+          
           <span className='card-title'>
             <div>
               <span className='lesson card-title-1 black-text'>{specific}</span>{' '}
