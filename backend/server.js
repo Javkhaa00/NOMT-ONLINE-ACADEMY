@@ -44,7 +44,7 @@ app.post('/sign-up', async function (req, res) {
     "month": req.body.month,
     "day": req.body.day
   }
-  console.log(userData.first_name, userData.second_name, userData.email, userData.pass, userData.phone, userData.school, userData.class_number, userData.year, userData.month, userData.day);
+  console.log(userData);
 
   await db.collection('users').insertOne(userData)
   console.log("successful register")
@@ -57,7 +57,7 @@ app.post('/sign-in', async function (req, res) {
     "password": req.body.password
   }
   console.log(userData.email, userData.password);
-  const user = await db.collection('users').findOne({ email: req.body.email, password: req.body.password });
+  const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
   if (!user) {
     // User was not found
     console.log("not found");
