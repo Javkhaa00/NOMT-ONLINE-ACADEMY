@@ -10,10 +10,9 @@ const LessonVideo = () => {
       <Header />
       <video
         id='my-video'
-        class='video-js video'
+        className='video-js video'
         controls
         preload='auto'
-        poster='MY_VIDEO_POSTER.jpg'
         data-setup='{"liveui": false}'
       >
         <source src={lesson} type='video/mp4' />
