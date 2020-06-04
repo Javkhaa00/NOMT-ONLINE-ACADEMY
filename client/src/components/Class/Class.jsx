@@ -66,6 +66,7 @@ const Class = () => {
           </div>
           {userInformation.name !== " " ? (
             <>
+              <p className="price">{Data.price}</p>
               <Link
                 className='button-signUp white-text'
                 onClick={() =>
@@ -78,8 +79,23 @@ const Class = () => {
             </Link>
             </>
           ) : (
-              <p className="price">{Data.price}</p>
+              <>
+                <p className="price">{Data.price}</p>
+                <Link
+                  className='button-signUp white-text'
+                  onClick={() =>
+                    setUserInformation({ ...userInformation, page: 'signUp' })
+                  }
+                  id='payment'
+                  to='/payment'
+                >
+                  Худалдан авах
+              </Link>
+              </>
             )}
+
+
+
         </div>
       </div>
     </div>
