@@ -16,10 +16,12 @@ import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
 import { lessondata } from './ClassData'
 import DataContext from '../mainContext'
+import { Link } from 'react-router-dom'
 
 const Class = () => {
 
-  const { userInformation } = useContext(DataContext);
+  const { userInformation, setUserInformation } = useContext(DataContext);
+
   console.log(userInformation)
 
   const Data = lessondata()
@@ -58,11 +60,26 @@ const Class = () => {
             {avatarImg()}
             <div className="teacherSectionProTitle">
               <p className="name">{Data.name}</p>
-              <p className="teacherText" style={{marginTop:'18px'}}>{Data.university}</p>
+              <p className="teacherText" style={{ marginTop: '18px' }}>{Data.university}</p>
               <p className="teacherText">{Data.score}</p>
             </div>
           </div>
-          <p className="price">{Data.price}</p>
+          {userInformation.name !== " " ? (
+            <>
+              <Link
+                className='button-signUp white-text'
+                onClick={() =>
+                  setUserInformation({ ...userInformation, page: 'signUp' })
+                }
+                id='signUp'
+                to='/sign-up'
+              >
+                Бүртгүүлэх
+            </Link>
+            </>
+          ) : (
+              <p className="price">{Data.price}</p>
+            )}
         </div>
       </div>
     </div>
