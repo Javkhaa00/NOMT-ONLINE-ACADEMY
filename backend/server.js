@@ -4,7 +4,8 @@ var bodyParser = require("body-parser");
 const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://127.0.0.1:27017'
 
-const dbName = 'database'
+const dbName = 'nomt'
+var UI = {};
 let db
 
 // var mydb = connect('host[:5000]/mydb');
@@ -26,9 +27,13 @@ app.use(bodyParser.urlencoded({
   extended: true
 }));
 
-app.get('/', (req, res) => {
-  res.send('hi')
-  console.log('hello world')
+app.get('/getData', (req, res) => {
+  res.send(UI)
+})
+
+app.get('/logOut', (req, res) => {
+  UI = {}
+  res.redirect('/')
 })
 
 app.post('/sign-up', async function (req, res) {
@@ -44,10 +49,10 @@ app.post('/sign-up', async function (req, res) {
     "month": req.body.month,
     "day": req.body.day
   }
-  console.log(userData.first_name, userData.second_name, userData.email, userData.pass, userData.phone, userData.school, userData.class_number, userData.year, userData.month, userData.day);
+  console.log(userData);
 
   await db.collection('users').insertOne(userData)
-  // res.send("success")
+  console.log("successful register")
   res.redirect('/sign-in')
 })
 
@@ -57,14 +62,18 @@ app.post('/sign-in', async function (req, res) {
     "password": req.body.password
   }
   console.log(userData.email, userData.password);
-  const user = await db.collection('users').findOne({ email: req.body.email, password: req.body.password });
+  const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
+
   if (!user) {
     // User was not found
-    res.send('invalid email or password')
+    console.log("not found");
+    res.redirect('/sign-in/error')
     return;
   }
-
-  res.send("success");
+  UI = {
+    name: user.second_name,
+  }
+  res.redirect('/')
 })
 
 app.options('/url...', (req, res, next) => {

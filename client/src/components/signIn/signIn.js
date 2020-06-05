@@ -1,18 +1,18 @@
-import React, { useContext } from "react";
+import React, {useEffect} from "react";
 import "./signIn.scss";
 import Header from "../Header/Header"
 import Check from "./check.jsx";
-import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
 
 const SingIn = () => {
-    const {userInformation, setUserInformation} = useContext(DataContext)
+    useEffect(() => {
+        if (window.location.href.split('/')[window.location.href.split('/').length - 1] === 'error')
+        alert('invalid email or password');
+    }, [])
     
     const singInClicked = () => {
         const result = Check()
         if (result.check === true) {
-            setUserInformation({...userInformation, name: result.userInformation.name, email: result.userInformation.email})
-            console.log(userInformation, result.userInformation)
             document.forms["sign-in"].submit();
         }
     }

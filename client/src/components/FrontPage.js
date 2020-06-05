@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React from 'react'
 import './FrontPage.scss'
 import Clock from './assets/icons/clock icon.png'
 import Money from './assets/icons/Price icon.png'
@@ -19,14 +19,10 @@ import school8 from './assets/schools/school8.png'
 import downButton from './assets/icons/arrowDown.png'
 import Header from './Header/Header.js'
 import TeacherCard from './Teachers card/TeacherCard'
-import DataContext from './mainContext'
 import { Link } from 'react-router-dom'
 
 const FrontPage = () => {
-  const { userInformation } = useContext(DataContext)
-  // fetch('/')
-  //   .then(res => console.log(res));
-  console.log(userInformation)
+
   const teacherInfo = [
     {
       name: 'Ану',
@@ -236,7 +232,11 @@ const FrontPage = () => {
             />
           ))}
         </div>
-        <Link to='/teachers' className='btn frontPageButton' onClick={() => window.scrollTo({top: 0})}>
+        <Link
+          to='/teachers'
+          className='btn frontPageButton'
+          onClick={() => window.scrollTo({ top: 0 })}
+        >
           <h6>Бүх багш</h6>
         </Link>
       </div>
@@ -244,7 +244,7 @@ const FrontPage = () => {
         <h1 className='center'>оюундаа хөрөнгө оруулахад бэлэн үү?</h1>
         <h5 className='center'>Өөрийн ирээдүйгээ гайхалтай болгоорой</h5>
         <Link
-          onClick={() => window.scrollTo({top: 0})}
+          onClick={() => window.scrollTo({ top: 0 })}
           to='/sign-up'
           className='btn frontPageButton frontPageBottomButton'
         >
