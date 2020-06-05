@@ -5,6 +5,7 @@
   "main": "server.js",
   "dependencies": {
     "express": "^4.17.1",
+    "firebase-tools": "^8.4.1",
     "mongodb": "^3.5.8"
   },
   "devDependencies": {
