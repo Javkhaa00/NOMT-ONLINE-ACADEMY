@@ -11,7 +11,7 @@ import javkhaa from '../assets/teachers/javkhaa.png'
 import mandah from '../assets/teachers/mandah.png'
 import munguldei from '../assets/teachers/munguldei.png'
 import namuungoo from '../assets/teachers/namuungoo.png'
-import otgontugs from '../assets/teachers/otgontugs.png'
+import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
@@ -37,7 +37,7 @@ const Class = () => {
     if (Data.image === 'mandah') return <img className="lessonTeacherImage" alt='mandah' src={mandah} />
     if (Data.image === 'munguldei') return <img className="lessonTeacherImage" alt='munguldei' src={munguldei} />
     if (Data.image === 'namuungoo') return <img className="lessonTeacherImage" alt='namuundoo' src={namuungoo} />
-    if (Data.image === 'otgontugs') return <img className="lessonTeacherImage" alt='otgontugs' src={otgontugs} />
+    if (Data.image === 'ylgum') return <img className="lessonTeacherImage" alt='ylgum' src={ylgum} />
     if (Data.image === 'sainbilegt') return <img className="lessonTeacherImage" alt='saibbilegt' src={sainbilegt} />
     if (Data.image === 'tselmeg') return <img className="lessonTeacherImage" alt='tselmeg' src={tselmeg} />
     if (Data.image === 'tsolmon') return <img className="lessonTeacherImage" alt='tsolmon' src={tsolmon} />

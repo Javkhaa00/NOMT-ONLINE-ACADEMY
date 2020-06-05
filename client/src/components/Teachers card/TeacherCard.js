@@ -1,10 +1,8 @@
 import React from 'react'
 import anu from '../assets/teachers/anu.png'
 import bilguun from '../assets/teachers/bilguun.png'
-import otgontugs from '../assets/teachers/otgontugs.png'
+import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
-// import ashid from '../assets/teachers/ashid.png'
-// import bayarjargal from '../assets/teachers/bayarjargal.png'
 import ezenbaatar from '../assets/teachers/ezenbaatar.png'
 import bayasgalan from '../assets/teachers/bayasgalan.png'
 import huslen from '../assets/teachers/huslen.png'
@@ -32,12 +30,12 @@ const TeacherCard = cin => {
         <img className='teacherProfilePicture' alt='bilguun' src={bilguun} />
       )
 
-    if (image === 'otgontugs')
+    if (image === 'ylgum')
       return (
         <img
           className='teacherProfilePicture'
-          alt='otgontugs'
-          src={otgontugs}
+          alt='ylgum'
+          src={ylgum}
         />
       )
 

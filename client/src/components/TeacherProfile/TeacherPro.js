@@ -3,10 +3,8 @@ import Header from '../Header/Header'
 import './TeacherPro.scss'
 import anu from '../assets/teachers/anu.png'
 import bilguun from '../assets/teachers/bilguun.png'
-import otgontugs from '../assets/teachers/otgontugs.png'
+import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
-// import ashid from '../assets/teachers/ashid.png'
-// import bayarjargal from '../assets/teachers/bayarjargal.png'
 import ezenbaatar from '../assets/teachers/ezenbaatar.png'
 import bayasgalan from '../assets/teachers/bayasgalan.png'
 import huslen from '../assets/teachers/huslen.png'
@@ -29,8 +27,8 @@ const TeacherPro = () => {
     if (ID === 'bilguun')
       return <img className='teacherImg' alt='bilguun' src={bilguun} />
 
-    if (ID === 'otgontugs')
-      return <img className='teacherImg' alt='otgontugs' src={otgontugs} />
+    if (ID === 'ylgum')
+      return <img className='teacherImg' alt='ylgum' src={ylgum} />
 
     if (ID === 'sainbilegt')
       return <img className='teacherImg' alt='sainbilegt' src={sainbilegt} />
