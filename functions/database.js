@@ -25,27 +25,47 @@ app.post('/sign-up', async function (req, res) {
         "day": req.body.day
     }
     // console.log(userData);
-    // await db.collection('users').insertOne(userData)
+    await db.collection('users').doc(userData)
     // console.log("successful register")
     res.redirect('/sign-in')
 })
 
-const createUser = (username) => {
-    db
-        .collection('usernames')
-        .get(inputUsername())
-        .then((doc) => {
-            if (doc.exists) {
-                return usernameUnavailable();
-            }
-
-            return createAccount();
-        })
-        .catch((error) => handleError(error));
-}
-
 let db = admin.firestore();
 
-let docRef = db.collection('users').doc('user');
+app.post('/sign-in', async function (req, res) {
+    const userData = {
+        "email": req.body.email,
+        "password": req.body.password
+    }
+    // console.log(userData.email, userData.password);
+    // const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
 
-let setUser = docRef.set(userData);
+    // if (!user) {
+    //     // User was not found
+    //     console.log("not found");
+    //     res.redirect('/sign-in/error')
+    //     return;
+    // }
+    // UI = {
+    //     name: user.second_name,
+    // }
+    // res.redirect('/')
+})
+
+// let docRef = db.collection('users').doc('user');
+
+// let setUser = docRef.set(userData);
+
+// const createUser = (username) => {
+//     db
+//         .collection('usernames')
+//         .get(inputUsername())
+//         .then((doc) => {
+//             if (doc.exists) {
+//                 return usernameUnavailable();
+//             }
+
+//             return createAccount();
+//         })
+//         .catch((error) => handleError(error));
+// }
