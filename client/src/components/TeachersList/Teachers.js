@@ -25,9 +25,9 @@ const Teachers = () => {
             image: 'bilguun'
         },
         {
-            name: 'Отгонтөгс',
+            name: 'Ялгум',
             lesson: 'Japan',
-            image: 'otgontugs'
+            image: 'ylgum'
         }
     ]
 

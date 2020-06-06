@@ -11,7 +11,7 @@ import javkhaa from '../assets/teachers/javkhaa.png'
 import mandah from '../assets/teachers/mandah.png'
 import munguldei from '../assets/teachers/munguldei.png'
 import namuungoo from '../assets/teachers/namuungoo.png'
-import otgontugs from '../assets/teachers/otgontugs.png'
+import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
@@ -37,7 +37,7 @@ const LessonsCard = props => {
     if (avatar === 'mandah') return <img alt='mandah' src={mandah} />
     if (avatar === 'munguldei') return <img alt='munguldei' src={munguldei} />
     if (avatar === 'namuungoo') return <img alt='namuundoo' src={namuungoo} />
-    if (avatar === 'otgontugs') return <img alt='otgontugs' src={otgontugs} />
+    if (avatar === 'ylgum') return <img alt='ylgum' src={ylgum} />
     if (avatar === 'sainbilegt')
       return <img alt='saibbilegt' src={sainbilegt} />
     if (avatar === 'tselmeg') return <img alt='tselmeg' src={tselmeg} />

@@ -1,5 +1,6 @@
-var express = require("express");
-var bodyParser = require("body-parser");
+const express = require("express");
+const bodyParser = require("body-parser");
+// const functions = require('firebase-functions');
 
 const MongoClient = require('mongodb').MongoClient
 const url = 'mongodb://127.0.0.1:27017'
@@ -28,6 +29,8 @@ app.use(bodyParser.urlencoded({
 }));
 
 app.get('/getData', (req, res) => {
+  var ip = req.headers['x-forwarded-for'] || req.connection.remoteAddress;
+  console.log(ip)
   res.send(UI)
 })
 
