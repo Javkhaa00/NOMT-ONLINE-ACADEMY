@@ -30,8 +30,6 @@ app.post('/sign-up', async function (req, res) {
     res.redirect('/sign-in')
 })
 
-let db = admin.firestore();
-
 app.post('/sign-in', async function (req, res) {
     const userData = {
         "email": req.body.email,
@@ -69,3 +67,5 @@ app.post('/sign-in', async function (req, res) {
 //         })
 //         .catch((error) => handleError(error));
 // }
+
+let db = admin.firestore();
