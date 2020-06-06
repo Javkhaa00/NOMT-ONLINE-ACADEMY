@@ -4,10 +4,7 @@ admin.initializeApp();
 
 let db = admin.firestore();
 
-db.collection('users').get()
-    .then((res) => {
-        console.log(res)
-    })
+console.log(db.collection('users')  )
 
 exports.app = functions.https.onRequest((req, res) => {
     res.send('hello from nomt')
