@@ -25,7 +25,7 @@ app.post('/sign-up', async function (req, res) {
         "day": req.body.day
     }
     // console.log(userData);
-    await db.collection('users').doc(userData)
+    // await db.collection('users').doc(userData)
     // console.log("successful register")
     res.redirect('/sign-in')
 })
@@ -36,7 +36,7 @@ app.post('/sign-in', async function (req, res) {
         "password": req.body.password
     }
     // console.log(userData.email, userData.password);
-    const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
+    // const user = await db.collection('users').findOne({ email: req.body.email, pass: req.body.password });
 
     // if (!user) {
     //     // User was not found
@@ -68,4 +68,4 @@ app.post('/sign-in', async function (req, res) {
 //         .catch((error) => handleError(error));
 // }
 
-let db = admin.firestore();
+// let db = admin.firestore();
