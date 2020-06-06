@@ -24,9 +24,7 @@ app.post('/sign-up', async function (req, res) {
         "month": req.body.month,
         "day": req.body.day
     }
-    // console.log(userData);
-    // await db.collection('users').insertOne(userData)
-    // console.log("successful register")
+    
     res.redirect('/sign-in')
 })
 
