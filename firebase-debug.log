@@ -183,3 +183,42 @@ Before we get started, keep in mind:
 [debug] [2020-06-06T04:16:24.673Z] [worker-app-7ac5f3d9-1ac1-40cf-be41-30f48ba86307]: IDLE {"metadata":{"emulator":{"name":"functions"},"message":"[worker-app-7ac5f3d9-1ac1-40cf-be41-30f48ba86307]: IDLE"}}
 [debug] [2020-06-06T04:16:24.674Z] [work-queue] {"queueLength":0,"workRunningCount":0}
 [info] i  hosting: 127.0.0.1 - - [06/Jun/2020:04:18:51 +0000] "GET /thisIs HTTP/1.1" 404 - "-" "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36" {"metadata":{"emulator":{"name":"hosting"},"message":"127.0.0.1 - - [06/Jun/2020:04:18:51 +0000] \"GET /thisIs HTTP/1.1\" 404 - \"-\" \"Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_6) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/83.0.4103.61 Safari/537.36\""}}
+[debug] [2020-06-06T05:16:35.917Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T05:16:35.921Z] Command:       /opt/local/bin/node /opt/local/bin/firebase init
+[debug] [2020-06-06T05:16:35.922Z] CLI Version:   8.4.1
+[debug] [2020-06-06T05:16:35.922Z] Platform:      darwin
+[debug] [2020-06-06T05:16:35.922Z] Node Version:  v12.17.0
+[debug] [2020-06-06T05:16:35.938Z] Time:          Sat Jun 06 2020 13:16:35 GMT+0800 (Ulaanbaatar Standard Time)
+[debug] [2020-06-06T05:16:35.938Z] ----------------------------------------------------------------------
+[debug] [2020-06-06T05:16:35.938Z] 
+[debug] [2020-06-06T05:16:35.950Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-06-06T05:16:35.951Z] > authorizing via signed-in user
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/showtime/Desktop/NOMT-ONLINE-ACADEMY
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using nomt-academy. 
+[debug] [2020-06-06T05:16:58.021Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2020-06-06T05:16:58.021Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2020-06-06T05:17:00.525Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 06 Jun 2020 05:16:59 GMT","server":"scaffolding on HTTPServer2","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-27=\":443\"; ma=2592000,h3-25=\":443\"; ma=2592000,h3-T050=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q049=\":443\"; ma=2592000,h3-Q048=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2020-06-06T05:17:00.536Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/nomt-academy  
+ 

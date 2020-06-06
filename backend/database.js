@@ -1,7 +1,6 @@
 const express = require("express");
 const bodyParser = require("body-parser");
 const admin = require('firebase-admin');
-const admin = require('firebase-admin');
 admin.initializeApp();
 
 var app = express()
