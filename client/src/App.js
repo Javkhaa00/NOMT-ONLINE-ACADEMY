@@ -18,25 +18,25 @@ function App () {
   const [ip, setIp] = useState(null)
   useEffect(() => {
     axios.get('http://api.ipify.org/?format=json').then(res => setIp(res.data))
-
   }, [])
 
+  console.log(ip)
   const [userInformation, setUserInformation] = useState({
     name: '',
     page: '',
     payed: ''
   })
 
-  useEffect(() => {
-    console.log(ip)
-    axios.get('/getData', { ip }).then(res => {
-      if (res.data.name !== undefined && userInformation.name === '') {
-        setUserInformation({ ...userInformation, name: res.data.name })
-      } else if (res.data.name === '' && userInformation.name !== '') {
-        setUserInformation({ ...userInformation, name: res.data.name })
-      }
-    })
-  }, [userInformation, ip])
+  // useEffect(() => {
+  //   console.log(ip)
+  //   axios.get('/getData', { ip }).then(res => {
+  //     if (res.data.name !== undefined && userInformation.name === '') {
+  //       setUserInformation({ ...userInformation, name: res.data.name })
+  //     } else if (res.data.name === '' && userInformation.name !== '') {
+  //       setUserInformation({ ...userInformation, name: res.data.name })
+  //     }
+  //   })
+  // }, [userInformation, ip])
 
   return (
     <Router>
