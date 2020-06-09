@@ -21,8 +21,6 @@ import { Link } from 'react-router-dom'
 
 const Class = () => {
 
-  const { userInformation, setUserInformation } = useContext(DataContext);
-
   console.log(userInformation)
 
   const Data = lessondata()
