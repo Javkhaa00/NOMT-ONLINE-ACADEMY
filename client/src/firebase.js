@@ -14,7 +14,7 @@ firebase.initializeApp(firebaseConfig);
 
 const createUser = (email, password) => {
     firebase.auth().createUserWithEmailAndPassword(email, password).catch(function(error) {
-        var errorCode = error.code;
+
         var errorMessage = error.message;
     
         window.alert("Error: " + errorMessage);
@@ -22,4 +22,3 @@ const createUser = (email, password) => {
 }
 
 export {createUser}
-

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/static/css/main.dce9a2e0.chunk.css",
-    "main.js": "/static/js/main.d5ca31b4.chunk.js",
-    "main.js.map": "/static/js/main.d5ca31b4.chunk.js.map",
+    "main.js": "/static/js/main.03c7872d.chunk.js",
+    "main.js.map": "/static/js/main.03c7872d.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8f9ae683.js",
     "runtime-main.js.map": "/static/js/runtime-main.8f9ae683.js.map",
-    "static/js/2.ec5db099.chunk.js": "/static/js/2.ec5db099.chunk.js",
-    "static/js/2.ec5db099.chunk.js.map": "/static/js/2.ec5db099.chunk.js.map",
+    "static/js/2.6b1e550f.chunk.js": "/static/js/2.6b1e550f.chunk.js",
+    "static/js/2.6b1e550f.chunk.js.map": "/static/js/2.6b1e550f.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.8288f34a70e57d4130e4bee51445fe2c.js": "/precache-manifest.8288f34a70e57d4130e4bee51445fe2c.js",
+    "precache-manifest.c671459ebfb27350ba18d079a114bce0.js": "/precache-manifest.c671459ebfb27350ba18d079a114bce0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.dce9a2e0.chunk.css.map": "/static/css/main.dce9a2e0.chunk.css.map",
-    "static/js/2.ec5db099.chunk.js.LICENSE.txt": "/static/js/2.ec5db099.chunk.js.LICENSE.txt",
+    "static/js/2.6b1e550f.chunk.js.LICENSE.txt": "/static/js/2.6b1e550f.chunk.js.LICENSE.txt",
     "static/media/BLACKPINK - 'Kill This Love' M-V.mp4": "/static/media/BLACKPINK - 'Kill This Love' M-V.e9bc1a3a.mp4",
     "static/media/Layer_1.png": "/static/media/Layer_1.6f241419.png",
     "static/media/FrontPage.scss": "/static/media/Nomt.64fbbb5b.png",
@@ -44,8 +44,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.8f9ae683.js",
-    "static/js/2.ec5db099.chunk.js",
+    "static/js/2.6b1e550f.chunk.js",
     "static/css/main.dce9a2e0.chunk.css",
-    "static/js/main.d5ca31b4.chunk.js"
+    "static/js/main.03c7872d.chunk.js"
   ]
 }

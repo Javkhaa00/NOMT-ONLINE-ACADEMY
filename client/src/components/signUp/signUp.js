@@ -193,7 +193,7 @@ const SignUp = () => {
           <a href='/sign-in' className='valign-wrapper sign-in' required>
             Нэвтрэх
           </a>
-          <button className='btn register' onClick={() => createUser(fields.email, fields.password)}>
+          <button className='btn register' onClick={() => {createUser(fields.email, fields.password); registerclicked()}}>
             Бүртгүүлэх
           </button>
         </div>

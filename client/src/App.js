@@ -13,19 +13,32 @@ import SignIn from './components/signIn/signIn.js'
 import Payment from './components/Payment/Payment'
 import DataContext from './components/mainContext'
 import LessonVideo from './components/lessonvideo/lessonVideo'
+import firebase from 'firebase'
 
 function App () {
-  const [ip, setIp] = useState(null)
-  useEffect(() => {
-    axios.get('http://api.ipify.org/?format=json').then(res => setIp(res.data))
-  }, [])
-
-  console.log(ip)
   const [userInformation, setUserInformation] = useState({
     name: '',
-    page: '',
-    payed: ''
+    payed: '',
+    email: ''
   })
+
+  useEffect(() => {
+    let db = firebase.firestore()
+    axios.get('http://api.ipify.org/?format=json').then(res => {
+      db.collection('users')
+        .get()
+        .then(querySnapshot => {
+          querySnapshot.forEach(doc => {
+            if (doc.data().activity === res.data.ip)
+              setUserInformation({
+                name: doc.data().name,
+                payed: doc.data().owned,
+                email: doc.data().email
+              })
+          })
+        })
+    })
+  }, [])
 
   // useEffect(() => {
   //   console.log(ip)

@@ -16,7 +16,6 @@ import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
 import { lessondata } from './ClassData'
-import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
 
 const Class = () => {
