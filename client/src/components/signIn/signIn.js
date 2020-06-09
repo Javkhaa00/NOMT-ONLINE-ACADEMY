@@ -1,10 +1,17 @@
-import React, {useEffect} from "react";
+import React, {useEffect, useState} from "react";
 import "./signIn.scss";
 import Header from "../Header/Header"
 import Check from "./check.jsx";
 import { Link } from 'react-router-dom'
 
 const SingIn = () => {
+
+    const [fields, setFields] = useState({
+        userName: '',
+        password: ''
+    })
+
+
     useEffect(() => {
         if (window.location.href.split('/')[window.location.href.split('/').length - 1] === 'error')
         alert('invalid email or password');
@@ -32,7 +39,7 @@ const SingIn = () => {
             <form id="sign-in" className="sign-in-container row" action="/sign-in" method="post" onSubmit={e => e.preventDefault()}>
                 <div className="input">
                     <label className="head-text left align">И-МАЙЛ</label>
-                    <input placeholder="ЦАХИМ ЩУУДАНГИЙН ХАЯГ" id="email" type="text" name="email" className="sign-in-input validate"></input>
+                    <input placeholder="ЦАХИМ ЩУУДАНГИЙН ХАЯГ" onChange={(e) => {setFields(e.target.value)}} id="email" type="text" name="email" className="sign-in-input validate"></input>
                 </div>
 
                 <div className="input">

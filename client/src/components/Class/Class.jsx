@@ -20,6 +20,7 @@ import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
 
 const Class = () => {
+  const {userInformation, setUserInformation} = useContext("");
 
   console.log(userInformation)
 
