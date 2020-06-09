@@ -1,8 +1,15 @@
 Arguments: 
+<<<<<<< HEAD
   /opt/local/bin/node /opt/local/libexec/yarn/bin/yarn.js add firebase-tools
 
 PATH: 
   /opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
+=======
+  /usr/local/bin/node /usr/share/yarn/bin/yarn.js add http2.
+
+PATH: 
+  /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+>>>>>>> 9bd7cd427a45f307d77d0c70984b39edfe17fd40
 
 Yarn version: 
   1.22.4
@@ -11,10 +18,27 @@ Node version:
   12.17.0
 
 Platform: 
+<<<<<<< HEAD
   darwin x64
 
 Trace: 
   Error: EACCES: permission denied, mkdir '/Users/batuch_ka/Desktop/test/NOMT-ONLINE-ACADEMY/client/node_modules/@types/duplexify'
+=======
+  linux x64
+
+Trace: 
+  Error: https://registry.yarnpkg.com/http2.: Not found
+      at Request.params.callback [as _callback] (/usr/share/yarn/lib/cli.js:66987:18)
+      at Request.self.callback (/usr/share/yarn/lib/cli.js:140748:22)
+      at Request.emit (events.js:315:20)
+      at Request.<anonymous> (/usr/share/yarn/lib/cli.js:141720:10)
+      at Request.emit (events.js:315:20)
+      at IncomingMessage.<anonymous> (/usr/share/yarn/lib/cli.js:141642:12)
+      at Object.onceWrapper (events.js:421:28)
+      at IncomingMessage.emit (events.js:327:22)
+      at endReadableNT (_stream_readable.js:1221:12)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+>>>>>>> 9bd7cd427a45f307d77d0c70984b39edfe17fd40
 
 npm manifest: 
   {
@@ -30,6 +54,11 @@ npm manifest:
       "body-parser": "^1.19.0",
       "bulma": "^0.8.2",
       "firebase": "^7.14.4",
+<<<<<<< HEAD
+=======
+      "firebase-tools": "^8.4.2",
+      "firebase-admin": "^8.12.1",
+>>>>>>> 9bd7cd427a45f307d77d0c70984b39edfe17fd40
       "materialize-css": "^1.0.0-rc.2",
       "mongodb": "^3.5.7",
       "mongoose": "^5.9.16",

@@ -19,7 +19,7 @@ const Payment = () => {
           </div>
         </div>
         <div className="sat">
-          <div style={{ textTransform: "uppercase", fontWeight: "500" }}>
+          <div style={{ textTransform: "uppercase", fontWeight: "500", marginTop:"-550px"}}>
             sat breaker:{" "}
           </div>
           <div style={{ marginLeft: "15px" }}>
@@ -38,7 +38,7 @@ const Payment = () => {
           </div>
         </div>
         <div className="sat">
-          <div style={{ textTransform: "uppercase", fontWeight: "500" }}>
+          <div style={{ textTransform: "uppercase", fontWeight: "500", marginTop:"-900px"}}>
             well... hello america? - 590k:{" "}
           </div>
           <div style={{ marginLeft: "15px" }}>
@@ -59,7 +59,7 @@ const Payment = () => {
           </div>
         </div>
         <div className="konichiva">
-          <div style={{ textTransform: "uppercase", fontWeight: "500" }}>
+          <div style={{ textTransform: "uppercase", fontWeight: "500", marginTop:"-1170px" }}>
             konichiva
           </div>
           <div style={{ marginLeft: "15px" }}>
@@ -71,7 +71,7 @@ const Payment = () => {
           </div>
         </div>
         <div className="sat">
-          <div style={{ textTransform: "uppercase", fontWeight: "500" }}>
+          <div style={{ textTransform: "uppercase", fontWeight: "500", marginTop:"-1670px"}}>
             well... hello japan? - 510k:{" "}
           </div>
           <div style={{ marginLeft: "15px" }}>
@@ -79,8 +79,9 @@ const Payment = () => {
             2. N5-N3 or N4-N2 or N3-N1
           </div>
         </div>
+        <div style={{marginTop:"-2200px"}}>
         <div className="head">ТӨЛБӨР ТООЦООНЫ МЭДЭЭЛЭЛ</div>
-        <div style={{fontWeight:"500", marginLeft: "15px"}}>
+        <div style={{fontWeight:"500"}}>
         Дансны дугаар: 457063198 <br/>
         Хүлээн авагчийн нэр: Ezenbaatar B.<br/>
         Гүйлгээний утга: Таны нэр, бүртгэлтэй Email хаяг, сонгосон хичээлийн нэр /багцийн нэр/<br/>
@@ -88,6 +89,7 @@ const Payment = () => {
         </div>
         <div>
         /Тооцооны хэсэг дээр асуух зүйл гарвал ХОЛБОО БАРИХ хэсэг рүү очин холбоо барина уу./<br/>
+        </div>
         </div>
       </div>
     </div>
