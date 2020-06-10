@@ -18,7 +18,7 @@ import firebase from 'firebase'
 function App () {
   const [userInformation, setUserInformation] = useState({
     name: '',
-    payed: '',
+    payed: [],
     email: ''
   })
 

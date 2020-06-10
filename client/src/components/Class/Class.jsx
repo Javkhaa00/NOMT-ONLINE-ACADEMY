@@ -15,32 +15,28 @@ import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
-import { lessondata } from './ClassData'
+import { lessonData } from './ClassData'
 import { Link } from 'react-router-dom'
-import DataContext from './components/mainContext'
+import DataContext from '../mainContext'
 
 const Class = () => {
-  const {userInformation, setUserInformation} = useContext(DataContext);
+  const path = window.location.href.split('/')
+  const { userInformation } = useContext(DataContext)
+  const Data = lessonData[path[4]][path[5]]
+  const owned = userInformation.payed
 
-  console.log(userInformation)
+  const check = () => {
+    var count = 0
+    owned.map(cur => {
+      count =
+        cur.general === path[4] && cur.subject === path[5] ? count + 1 : count
+      return 'hi'
+    })
+    if (count !== 0) return true
 
-  const Data = lessondata()
-
-  const avatarImg = () => {
-    if (Data.image === 'anu') return <img className="lessonTeacherImage" alt='anu' src={anu} />
-    if (Data.image === 'bilguun') return <img className="lessonTeacherImage" alt='bilguun' src={bilguun} />
-    if (Data.image === 'ezenbaatar') return <img className="lessonTeacherImage" alt='ezenbaatar' src={ezenbaatar} />
-    if (Data.image === 'bayasgalan') return <img className="lessonTeacherImage" alt='bayaslgalan' src={bayasgalan} />
-    if (Data.image === 'huslen') return <img className="lessonTeacherImage" alt='huslen' src={huslen} />
-    if (Data.image === 'javkhaa') return <img className="lessonTeacherImage" alt='javkhaa' src={javkhaa} />
-    if (Data.image === 'mandah') return <img className="lessonTeacherImage" alt='mandah' src={mandah} />
-    if (Data.image === 'munguldei') return <img className="lessonTeacherImage" alt='munguldei' src={munguldei} />
-    if (Data.image === 'namuungoo') return <img className="lessonTeacherImage" alt='namuundoo' src={namuungoo} />
-    if (Data.image === 'ylgum') return <img className="lessonTeacherImage" alt='ylgum' src={ylgum} />
-    if (Data.image === 'sainbilegt') return <img className="lessonTeacherImage" alt='saibbilegt' src={sainbilegt} />
-    if (Data.image === 'tselmeg') return <img className="lessonTeacherImage" alt='tselmeg' src={tselmeg} />
-    if (Data.image === 'tsolmon') return <img className="lessonTeacherImage" alt='tsolmon' src={tsolmon} />
+    return false
   }
+  // console.log(check())
   return (
     <div className='teacherLessons'>
       <Header />
@@ -57,31 +53,27 @@ const Class = () => {
         </div>
         <div className='teacherSection'>
           <div className='teacherSectionPro'>
-            {avatarImg()}
-            <div className="teacherSectionProTitle">
-              <p className="name">{Data.name}</p>
-              <p className="teacherText" style={{ marginTop: '18px' }}>{Data.university}</p>
-              <p className="teacherText">{Data.score}</p>
-              {userInformation.payed !== " " ? (
-                <img
-                  className="buy"
-                  src={pay}
-                  alt="pay"
-                />
-              ) : ('')}
-
+            {avatarImg(Data.image)}
+            <div className='teacherSectionProTitle'>
+              <p className='name'>{Data.name}</p>
+              <p className='teacherText' style={{ marginTop: '18px' }}>
+                {Data.university}
+              </p>
+              <p className='teacherText'>{Data.score}</p>
+              {check() === true ? (
+                <img className='buy' src={pay} alt='pay' />
+              ) : (
+                ''
+              )}
             </div>
           </div>
-          {userInformation.payed === ' ' ? (
+          {check() === false ? (
             <>
-              {userInformation.name !== ' ' ? (
+              {userInformation.name === '' ? (
                 <>
-                  <p className="price">{Data.price}</p>
+                  <p className='price'>{Data.price}</p>
                   <Link
                     className='button-signUp white-text'
-                    onClick={() =>
-                      setUserInformation({ ...userInformation, page: 'signUp' })
-                    }
                     id='signUp'
                     to='/sign-up'
                   >
@@ -89,29 +81,64 @@ const Class = () => {
                   </Link>
                 </>
               ) : (
-                  <>
-                    <p className="price">{Data.price}</p>
-                    <Link
-                      className='button-signUp white-text'
-                      onClick={() =>
-                        setUserInformation({ ...userInformation, page: 'payment' })
-                      }
-                      id='payment'
-                      to='/payment'
-                    >
-                      Худалдан авах
-                    </Link>
-                  </>
-                )}
+                <>
+                  <p className='price'>{Data.price}</p>
+                  <Link
+                    className='button-signUp white-text'
+                    id='payment'
+                    to='/payment'
+                  >
+                    Худалдан авах
+                  </Link>
+                </>
+              )}
             </>
-            ) : (
-              <p className="price">{Data.price}</p>
+          ) : (
+            <p className='price'>{Data.price}</p>
           )}
-
         </div>
       </div>
-      </div>
+    </div>
   )
+}
+
+const avatarImg = image => {
+  if (image === 'anu')
+    return <img className='lessonTeacherImage' alt='anu' src={anu} />
+  if (image === 'bilguun')
+    return <img className='lessonTeacherImage' alt='bilguun' src={bilguun} />
+  if (image === 'ezenbaatar')
+    return (
+      <img className='lessonTeacherImage' alt='ezenbaatar' src={ezenbaatar} />
+    )
+  if (image === 'bayasgalan')
+    return (
+      <img className='lessonTeacherImage' alt='bayaslgalan' src={bayasgalan} />
+    )
+  if (image === 'huslen')
+    return <img className='lessonTeacherImage' alt='huslen' src={huslen} />
+  if (image === 'javkhaa')
+    return <img className='lessonTeacherImage' alt='javkhaa' src={javkhaa} />
+  if (image === 'mandah')
+    return <img className='lessonTeacherImage' alt='mandah' src={mandah} />
+  if (image === 'munguldei')
+    return (
+      <img className='lessonTeacherImage' alt='munguldei' src={munguldei} />
+    )
+  if (image === 'namuungoo')
+    return (
+      <img className='lessonTeacherImage' alt='namuundoo' src={namuungoo} />
+    )
+  if (image === 'ylgum')
+    return <img className='lessonTeacherImage' alt='ylgum' src={ylgum} />
+  if (image === 'sainbilegt')
+    return (
+      <img className='lessonTeacherImage' alt='saibbilegt' src={sainbilegt} />
+    )
+  if (image === 'tselmeg')
+    return <img className='lessonTeacherImage' alt='tselmeg' src={tselmeg} />
+  if (image === 'tsolmon')
+    return <img className='lessonTeacherImage' alt='tsolmon' src={tsolmon} />
 }
 
 export default Class

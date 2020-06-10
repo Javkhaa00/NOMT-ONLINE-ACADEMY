@@ -18,7 +18,7 @@ export const LESSON_UNITS = {
         avatar: "tselmeg"
       },
       {
-        specific: "writting",
+        specific: "writing",
         general: "sat reasoning",
         teacher: "ЦЭЛМЭГ",
         uni: "UC Berkeley",
@@ -30,14 +30,15 @@ export const LESSON_UNITS = {
         teacher: "ЭЗЭНБААТАР",
         uni: "KANSAS UNIVERSITY",
         avatar: "ezenbaatar"
-      },
-      {
-        specific: "essey",
-        general: "sat reasoning",
-        teacher: "",
-        uni: "",
-        avatar: ""
       }
+      // ,
+      // {
+      //   specific: "essey",
+      //   general: "sat reasoning",
+      //   teacher: "",
+      //   uni: "",
+      //   avatar: ""
+      // }
     ],
     satsubjects: [
       {
@@ -45,7 +46,7 @@ export const LESSON_UNITS = {
         general: "sat subject",
         teacher: "ЦОЛМОН",
         uni: "MIT",
-        avatar: ""
+        avatar: "tsolmon"
       },
       {
         specific: "math lvl 2",
@@ -91,9 +92,9 @@ export const LESSON_UNITS = {
       {
         specific: "japanese",
         general: "monbusho",
-        teacher: "ОТГОНТӨГС",
+        teacher: "Ялгум",
         uni: "",
-        avatar: "otgontugs"
+        avatar: "ylgum"
       }
     ],
     hsk: [
@@ -128,14 +129,14 @@ export const LESSON_UNITS = {
     ],
     undergraduate: [
       {
-        specific: "a-p",
+        specific: "japan",
         general: "japanese undergraduated",
         teacher: "САЙНБИЛЭГТ",
         uni: "The University of Osaka",
-        avatar: "sianbilegt"
+        avatar: "sainbilegt"
       },
       {
-        specific: "a-p",
+        specific: "us",
         general: "us undergraduated",
         teacher: "НАМУУНГОО",
         uni: "HARVARD",
@@ -143,13 +144,6 @@ export const LESSON_UNITS = {
       }
     ],
     programm: [
-      {
-        specific: "phyton",
-        general: "programming",
-        teacher: "",
-        uni: "",
-        avatar: ""
-      },
       {
         specific: "html",
         general: "programming",
@@ -163,12 +157,6 @@ export const LESSON_UNITS = {
         teacher: "МӨНХЖАВХЛАН",
         uni: "",
         avatar: "javkhaa"
-      },
-      {
-        specific: "c++",
-        general: "programming",
-        teacher: "ЗОЛБОО",
-        uni: ""
       }
     ]
   };
