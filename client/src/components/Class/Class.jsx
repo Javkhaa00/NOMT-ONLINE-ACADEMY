@@ -17,9 +17,10 @@ import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
 import { lessondata } from './ClassData'
 import { Link } from 'react-router-dom'
+import DataContext from './components/mainContext'
 
 const Class = () => {
-  const {userInformation, setUserInformation} = useContext("");
+  const {userInformation, setUserInformation} = useContext(DataContext);
 
   console.log(userInformation)
 
