@@ -2,41 +2,28 @@ import React, { useState } from 'react'
 import './signUp.scss'
 import Header from '../Header/Header'
 import Check from './check'
-import {createUser} from '../../firebase'
+import { createUser } from '../../firebase'
 
 const SignUp = () => {
-
-
   const [fields, setFields] = useState({
     lastName: '',
     name: '',
     password: '',
-    email:''
+    email: ''
   })
 
   const registerclicked = () => {
-    const resultOfCheck = Check();
+    const resultOfCheck = Check()
     if (resultOfCheck.check === true) {
-      document.forms["sign-up"].submit();
+      createUser(fields)
+      // document.forms["sign-up"].submit();
     }
   }
 
-  const handleInputFieldChange = (keyName) => (e) => {
-    setFields({...fields, [keyName]: e.target.value});
-    console.log('lastname: ', fields.lastName)
-    console.log('name: ', fields.name)
-    console.log('year: ', fields.year)
-    console.log(fields.mouth)
-    console.log(fields.day)
-    console.log(fields.school)
-    console.log(fields.grade)
-    console.log(fields.phoneNumber)
-    console.log(fields.password)
+  const handleInputFieldChange = keyName => e => {
+    setFields({ ...fields, [keyName]: e.target.value })
   }
 
-  // const worthy = () => {
-  //   console.log('passed')
-  // }
   return (
     <div className='register-container row'>
       <Header />
@@ -46,9 +33,15 @@ const SignUp = () => {
         </div>
         <div className='text'>Таньд олон давуу тал бий болох болно</div>
       </div>
-      <div className="down_button "></div>
+      <div className='down_button '></div>
 
-      <form id="sign-up" className='sign-up-container row' action="/sign-up" method="post" onSubmit={e => e.preventDefault()}>
+      <form
+        id='sign-up'
+        className='sign-up-container row'
+        action='/sign-up'
+        method='post'
+        onSubmit={e => e.preventDefault()}
+      >
         <div className='input'>
           <label className='head-text left align'>ОВОГ</label>
           <input
@@ -90,8 +83,8 @@ const SignUp = () => {
               required
             ></input>
             <input
-              onChange={handleInputFieldChange('mouth')}
-              value={fields.mouth}
+              onChange={handleInputFieldChange('month')}
+              value={fields.month}
               placeholder='САР'
               id='month'
               name='month'
@@ -160,7 +153,14 @@ const SignUp = () => {
         </div>
 
         <div className='input'>
-          <label onChange={(e) => { setFields(e.target.value) }} className='head-text left-align'>И-МЭЙЛ</label>
+          <label
+            onChange={e => {
+              setFields(e.target.value)
+            }}
+            className='head-text left-align'
+          >
+            И-МЭЙЛ
+          </label>
           <input
             onChange={handleInputFieldChange('email')}
             value={fields.email}
@@ -193,7 +193,10 @@ const SignUp = () => {
           <a href='/sign-in' className='valign-wrapper sign-in' required>
             Нэвтрэх
           </a>
-          <button className='btn register' onClick={() => {createUser(fields.email, fields.password); registerclicked()}}>
+          <button
+            className='btn register'
+            onClick={registerclicked}
+          >
             Бүртгүүлэх
           </button>
         </div>
