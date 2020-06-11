@@ -22,7 +22,7 @@ const SingIn = () => {
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
     if (result.check === true) {
-      axios.get('http://api.ipify.org/?format=json').then(res => {
+      axios.get('https://api.ipify.org/?format=json').then(res => {
         db.collection('users')
           .get()
           .then(querySnapshot => {

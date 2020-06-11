@@ -10,7 +10,9 @@ const firebaseConfig = {
     appId: "1:51870718811:web:1e294eb55d7a4bb34d587e",
     measurementId: "G-DTXE1YSJXW"
 };
-firebase.initializeApp(firebaseConfig);
+if (!firebase.apps.length) {
+  firebase.initializeApp(firebaseConfig);
+}
 
 const createUser = (fields) => {
     const db = firebase.firestore()

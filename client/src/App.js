@@ -24,7 +24,7 @@ function App () {
 
   useEffect(() => {
     let db = firebase.firestore()
-    axios.get('http://api.ipify.org/?format=json').then(res => {
+    axios.get('https://api.ipify.org/?format=json').then(res => {
       db.collection('users')
         .get()
         .then(querySnapshot => {
