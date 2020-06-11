@@ -1,30 +1,30 @@
-import React, { useState } from "react";
-import Header from "../Header/Header";
-import "./Lessons.scss";
-import LessonCard from "./LessonsCard";
-import { COURSES, LESSON_UNITS} from './LessonsData';
-
+import React, { useState } from 'react'
+import Header from '../Header/Header'
+import './Lessons.scss'
+import LessonCard from './LessonsCard'
+import { COURSES, LESSON_UNITS } from './LessonsData'
 
 const Lessons = () => {
-  const [selectedLessonId, setSelectedLessonId] = useState('satreasoning');
+  const [selectedLessonId, setSelectedLessonId] = useState('satreasoning')
 
   return (
-    <div className="Teachers row">
+    <div className='Teachers row'>
       <Header />
-      <div className="main">
-        <div className="name">
+      <div className='main'>
+        <div className='name'>
           {COURSES.map((course, index) => (
-            <div 
+            <div
               key={index}
-              className={`Lesson-course-title ${selectedLessonId === course.id && 'bold'}`} id="satSubject" 
+              className={`Lesson-course-title ${selectedLessonId ===
+                course.id && 'bold'}`}
+              id='satSubject'
               onClick={() => setSelectedLessonId(course.id)}
             >
               {course.title}
             </div>
           ))}
         </div>
-        <div
-          className="lessons row">
+        <div className='lessons row'>
           {LESSON_UNITS[selectedLessonId].map((cur, index) => (
             <LessonCard
               key={index}
@@ -33,12 +33,13 @@ const Lessons = () => {
               teacher={cur.teacher}
               uni={cur.uni}
               avatar={cur.avatar}
+              generalNS={selectedLessonId}
             />
           ))}
         </div>
       </div>
-    </div >
-  );
-};
+    </div>
+  )
+}
 
-export default Lessons;
+export default Lessons

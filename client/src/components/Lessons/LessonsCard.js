@@ -1,8 +1,6 @@
 import React, { useContext } from 'react'
 import background from '../assets/card.png'
 import anu from '../assets/teachers/anu.png'
-// import ashid from "../assets/teachers/ashid.png";
-// import bayarjargal from "../assets/teachers/bayarjargal.png";
 import bilguun from '../assets/teachers/bilguun.png'
 import ezenbaatar from '../assets/teachers/ezenbaatar.png'
 import bayasgalan from '../assets/teachers/bayasgalan.png'
@@ -21,40 +19,27 @@ import payed from '../assets/payed.png'
 import DataContext from '../mainContext'
 
 const LessonsCard = props => {
-  const { specific, general, teacher, uni, avatar } = props
-  const generalNospace = general.split(' ').length === 1 ? general : general.split(' ')[0] + general.split(' ')[1];
-  const { userInformation } = useContext(DataContext);
+  const { specific, general, teacher, uni, avatar, generalNS } = props
+  const { userInformation } = useContext(DataContext)
+  const owned = userInformation.payed
 
-  const avatarImg = () => {
-    if (avatar === 'anu') return <img alt='anu' src={anu} />
-    if (avatar === 'bilguun') return <img alt='bilguun' src={bilguun} />
-    if (avatar === 'ezenbaatar')
-      return <img alt='ezenbaatar' src={ezenbaatar} />
-    if (avatar === 'bayasgalan')
-      return <img alt='bayaslgalan' src={bayasgalan} />
-    if (avatar === 'huslen') return <img alt='huslen' src={huslen} />
-    if (avatar === 'javkhaa') return <img alt='javkhaa' src={javkhaa} />
-    if (avatar === 'mandah') return <img alt='mandah' src={mandah} />
-    if (avatar === 'munguldei') return <img alt='munguldei' src={munguldei} />
-    if (avatar === 'namuungoo') return <img alt='namuundoo' src={namuungoo} />
-    if (avatar === 'ylgum') return <img alt='ylgum' src={ylgum} />
-    if (avatar === 'sainbilegt')
-      return <img alt='saibbilegt' src={sainbilegt} />
-    if (avatar === 'tselmeg') return <img alt='tselmeg' src={tselmeg} />
-    if (avatar === 'tsolmon') return <img alt='tsolmon' src={tsolmon} />
+  const check = () => {
+    var count = 0
+    owned.map(cur => {
+      count =
+        cur.general === generalNS && cur.subject === specific ? count + 1 : count
+        return 'hi'
+    })
+    if (count !== 0) return <img alt='buyed' className='payed' src={payed} />
   }
 
   return (
     <div className=' col l0 lessonCard'>
-      <Link className='card' to={"/class/" + generalNospace + "/" + specific}>
+      <Link className='card' to={'/class/' + generalNS + '/' + specific}>
         <div className='card-image'>
           <img alt='background' className='background' src={background} />
-          {userInformation.payed !== " " ? (
-            <img alt="buyed" className="payed" src={payed}/>
-          ) : (
-            " "
-          )}
-          
+          {check()}
+
           <span className='card-title'>
             <div>
               <span className='lesson card-title-1 black-text'>{specific}</span>{' '}
@@ -67,13 +52,29 @@ const LessonsCard = props => {
             </div>
           </span>
           <div className='avatarImg btn-floating halfway-fab white'>
-            {avatarImg()}
+            {avatarImg(avatar)}
           </div>
         </div>
         <div className='card-content lessonCardText'></div>
       </Link>
     </div>
   )
+}
+
+const avatarImg = avatar => {
+  if (avatar === 'anu') return <img alt='anu' src={anu} />
+  if (avatar === 'bilguun') return <img alt='bilguun' src={bilguun} />
+  if (avatar === 'ezenbaatar') return <img alt='ezenbaatar' src={ezenbaatar} />
+  if (avatar === 'bayasgalan') return <img alt='bayaslgalan' src={bayasgalan} />
+  if (avatar === 'huslen') return <img alt='huslen' src={huslen} />
+  if (avatar === 'javkhaa') return <img alt='javkhaa' src={javkhaa} />
+  if (avatar === 'mandah') return <img alt='mandah' src={mandah} />
+  if (avatar === 'munguldei') return <img alt='munguldei' src={munguldei} />
+  if (avatar === 'namuungoo') return <img alt='namuundoo' src={namuungoo} />
+  if (avatar === 'ylgum') return <img alt='ylgum' src={ylgum} />
+  if (avatar === 'sainbilegt') return <img alt='saibbilegt' src={sainbilegt} />
+  if (avatar === 'tselmeg') return <img alt='tselmeg' src={tselmeg} />
+  if (avatar === 'tsolmon') return <img alt='tsolmon' src={tsolmon} />
 }
 
 export default LessonsCard

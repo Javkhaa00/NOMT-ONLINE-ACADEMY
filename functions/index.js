@@ -1,11 +1,7 @@
-const functions = require('firebase-functions');
-const admin = require('firebase-admin');
-admin.initializeApp();
+const functions = require('firebase-functions')
 
-let db = admin.firestore();
-
-console.log(db.collection('users')  )
+console.log('wtf')
 
 exports.app = functions.https.onRequest((req, res) => {
-    res.send('hello from nomt')
-});
+  res.send('hello from nomt')
+})

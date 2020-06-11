@@ -4,10 +4,11 @@ import M from 'materialize-css/dist/js/materialize'
 import './Header.scss'
 import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
-import Axios from 'axios'
+import firebase from 'firebase'
 
 const Header = () => {
-  const { userInformation, setUserInformation } = useContext(DataContext)
+  const db = firebase.firestore()
+  const { userInformation } = useContext(DataContext)
 
   useEffect(() => {
     const elems = document.querySelectorAll('.dropdown-trigger')
@@ -16,39 +17,43 @@ const Header = () => {
       coverTrigger: false
     })
     console.log(instances)
-  }, [])
-  
-  useEffect(() => {
-    const page = window.location.href.split('/')[window.location.href.split('/').length - 1];
+    const page = window.location.href.split('/')[
+      window.location.href.split('/').length - 1
+    ]
     if (document.getElementById(page) !== null) {
-      document.getElementById(page).style.fontWeight = "bold"
+      document.getElementById(page).style.fontWeight = 'bold'
     }
   }, [])
 
+  const logOut = () => {
+    db.collection('users')
+      .get()
+      .then(querySnapshot => {
+        var count = 1;
+        querySnapshot.forEach(async doc => {
+          if (doc.data().email === userInformation.email) {
+            await db.collection('users').doc(count + '').set({
+              activity: ''
+            }, { merge: true })
+            window.location.href = '/';
+          }
+          count++
+        })
+      })
+  }
   return (
     <nav className=''>
-      <Link to='/' className='brand-logo' onClick={() => setUserInformation({ ...userInformation, page: ''})}>
+      <Link
+        to='/'
+        className='brand-logo'
+      >
         <img alt='logo' src={logo} />
       </Link>
       <div id='nav-mobile' className='navbar left'>
-        <Link
-          className='black-text titles'
-          onClick={() =>
-            setUserInformation({ ...userInformation, page: 'lessons' })
-          }
-          id='lessons'
-          to='/lessons'
-        >
+        <Link className='black-text titles' id='lessons' to='/lessons'>
           Сургалтууд
         </Link>
-        <Link
-          className='black-text titles'
-          onClick={() =>
-            setUserInformation({ ...userInformation, page: 'teachers' })
-          }
-          id='teachers'
-          to='/teachers'
-        >
+        <Link className='black-text titles' id='teachers' to='/teachers'>
           Бидний тухай
         </Link>
         <p
@@ -63,14 +68,7 @@ const Header = () => {
         >
           Холбоо барих
         </p>
-        <Link
-          className='black-text titles'
-          onClick={() =>
-            setUserInformation({ ...userInformation, page: 'payment' })
-          }
-          id='payment'
-          to='/payment'
-        >
+        <Link className='black-text titles' id='payment' to='/payment'>
           Төлбөр тооцоо
         </Link>
       </div>
@@ -87,9 +85,6 @@ const Header = () => {
           <>
             <Link
               className='buttonSignIn black-text'
-              onClick={() =>
-                setUserInformation({ ...userInformation, page: 'sign-in' })
-              }
               id='sign-in'
               to='/sign-in'
             >
@@ -97,9 +92,6 @@ const Header = () => {
             </Link>
             <Link
               className='buttonSignUp black-text'
-              onClick={() =>
-                setUserInformation({ ...userInformation, page: 'sign-up' })
-              }
               id='sign-up'
               to='/sign-up'
             >
@@ -119,9 +111,9 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <a style={{ paddingTop: '0' }} className='right' href="/" onClick={() => Axios.get('/logOut')}>
+            <div style={{ paddingTop: '0' }} className='right' onClick={logOut}>
               LOG OUT
-            </a>
+            </div>
           </li>
         </ul>
       </div>
