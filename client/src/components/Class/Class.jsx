@@ -36,7 +36,13 @@ const Class = () => {
 
     return false
   }
-  // console.log(check())
+  
+  const toVideoLink = (link) => {
+    if (check() === true) {
+      window.open(link, '_blank')
+    }
+  }
+
   return (
     <div className='teacherLessons'>
       <Header />
@@ -44,7 +50,7 @@ const Class = () => {
         <div className='lessonSection'>
           {Data.lessons.map((cur, index) => {
             return (
-              <div key={index} className='teacherLesson'>
+              <div key={index} className='teacherLesson' onClick={() => toVideoLink(cur.link)}>
                 <p className='lesson name'>{cur.name}</p>
                 <p className='lesson time'>{cur.time}</p>
               </div>
