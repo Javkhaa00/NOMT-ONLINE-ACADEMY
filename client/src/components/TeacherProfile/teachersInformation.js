@@ -14,7 +14,7 @@ const teacherInformation = {
   },
   anu: {
     name: 'Ану',
-    school: 'Тэнцсэн сургууль: 华中科技大学同济医学院附属同济医院',
+    school: 'Тэнцсэн сургууль: Tongji Medical University of Hust',
     achievement: ['HSK6-256'],
     littleStory: '',
     Subject: 'HSK level 1,2,3,4',
