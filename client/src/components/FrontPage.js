@@ -51,7 +51,7 @@ const FrontPage = () => {
       <Header />
       <div className='first-text row col l10 m10 offset-l1 offset-m1'>
         <div style={{ width: '613px', marginLeft: '25px' }}>
-          <h1 className='inspiration'>
+          <h1 className='inspiration' id='inspiration'>
             Таны ирээдүйн өөртөө хийх хөрөнгө оруулалт
           </h1>
           <h5>Залуу сурагчид өөрсдийн амжилтын туршлагаас хуваалцах болно.</h5>
