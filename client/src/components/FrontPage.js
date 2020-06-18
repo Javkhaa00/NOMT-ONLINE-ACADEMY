@@ -20,9 +20,9 @@ import downButton from './assets/icons/arrowDown.png'
 import Header from './Header/Header.js'
 import TeacherCard from './Teachers card/TeacherCard'
 import { Link } from 'react-router-dom'
+// import firebase from 'firebase'
 
 const FrontPage = () => {
-
   const teacherInfo = [
     {
       name: 'Ану',
@@ -45,6 +45,16 @@ const FrontPage = () => {
       image: 'tsolmon'
     }
   ]
+
+  // const clicked = () => {
+  //   const inspiration = document.getElementById('inspiration')
+  //   inspiration.addEventListener('click', () => {
+  //     const text = firebase.functions().httpsCallable('call')
+  //     text({ name: 'zolboo' }).then(result => {
+  //       console.log(result.data)
+  //     })
+  //   })
+  // }
 
   return (
     <div className='mainDiv row'>

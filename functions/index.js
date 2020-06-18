@@ -14,24 +14,11 @@ exports.app = functions.https.onRequest((req, res) => {
   res.send('done')
 })
 
+exports.call = functions.https.onCall((data, context) => {
+  return `hello it's me, i was wondreing ${data.name}`; 
+})
+
 exports.randomNumber = functions.https.onRequest((req, res) => {
   const number = Math.round(Math.random() * 100)
   res.send(number.toString())
 })
-
-exports.hello = functions.https.onCall((data, context) => {
-  const name = data.name
-  return `Hello to ${name}`
-})
-
-// const button = document.getElementById('inspiration')
-// button.addEventListener('click', () => {
-//   const hello = firebase.functions().httpsCallable('hello')
-//   hello({ name: 'zolboo' }).then(result => {
-//     console.log(result.data)
-//   })
-// })
-
-// module.exports = {
-//     checkUsernames: functions.https.onRequest(checkUsernames),
-// };
