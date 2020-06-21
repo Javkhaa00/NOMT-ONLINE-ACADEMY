@@ -20,9 +20,10 @@ import downButton from './assets/icons/arrowDown.png'
 import Header from './Header/Header.js'
 import TeacherCard from './Teachers card/TeacherCard'
 import { Link } from 'react-router-dom'
-// import firebase from 'firebase'
+import { axios } from 'axios'
 
 const FrontPage = () => {
+  const api_key = 'AIzaSyDvOD0-Fy4wJ979gUyy38oL5qJ7Aqx5K7Q'
   const teacherInfo = [
     {
       name: 'Ану',
@@ -46,22 +47,25 @@ const FrontPage = () => {
     }
   ]
 
-  // const clicked = () => {
-  //   const inspiration = document.getElementById('inspiration')
-  //   inspiration.addEventListener('click', () => {
-  //     const text = firebase.functions().httpsCallable('call')
-  //     text({ name: 'zolboo' }).then(result => {
-  //       console.log(result.data)
-  //     })
-  //   })
-  // }
+  const clicked = () => {
+    // axios.get("https://www.google.com")
+    //   .then((res) => {
+    //     console.log(res)
+    //   })
+    // https://www.googleapis.com/youtube/v3/videos?id=7lCDEYXw3mM&key=AIzaSyDvOD0-Fy4wJ979gUyy38oL5qJ7Aqx5K7Q&part=snippet,contentDetails,statistics,status
+    fetch(
+      `https://www.googleapis.com/youtube/v3/videos?id=E9UFIgPY8KY&key=${api_key}&part=snippet,contentDetails,statistics,status`
+    )
+      .then(response => response.json())
+      .then(data => console.log(data))
+  }
 
   return (
     <div className='mainDiv row'>
       <Header />
       <div className='first-text row col l10 m10 offset-l1 offset-m1'>
         <div style={{ width: '613px', marginLeft: '25px' }}>
-          <h1 className='inspiration' id='inspiration'>
+          <h1 className='inspiration' id='inspiration' onClick={clicked}>
             Таны ирээдүйн өөртөө хийх хөрөнгө оруулалт
           </h1>
           <h5>Залуу сурагчид өөрсдийн амжилтын туршлагаас хуваалцах болно.</h5>
