@@ -40,17 +40,6 @@ function App () {
     })
   }, [])
 
-  // useEffect(() => {
-  //   console.log(ip)
-  //   axios.get('/getData', { ip }).then(res => {
-  //     if (res.data.name !== undefined && userInformation.name === '') {
-  //       setUserInformation({ ...userInformation, name: res.data.name })
-  //     } else if (res.data.name === '' && userInformation.name !== '') {
-  //       setUserInformation({ ...userInformation, name: res.data.name })
-  //     }
-  //   })
-  // }, [userInformation, ip])
-
   return (
     <Router>
       <DataContext.Provider value={{ userInformation, setUserInformation }}>

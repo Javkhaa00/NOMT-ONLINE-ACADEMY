@@ -5,26 +5,23 @@ import Header from '../Header/Header'
 // import lesson from "../assets/testing video/BLACKPINK - 'Kill This Love' M-V.mp4"
 
 const LessonVideo = () => {
+  const id = window.location.href.split('/')[window.location.href.split("/").length - 1];
+  const source = `https://www.youtube.com/embed/${id}`;
   return (
-    <div className='videoMain'>
+    <div className="videoMain">
       <Header />
-      {/* <video
-        id='my-video'
-        className='video-js video'
-        controls
-        preload='auto'
-        data-setup='{"liveui": false}'
-      >
-        <source src='https://www.youtube.com/watch?v=wDJVMNMsNEQ' type='video/mp4' />
-        <source src='https://www.youtube.com/watch?v=wDJVMNMsNEQ' type='video/webm' />
-      </video> */}
       <iframe
-        title='lesson'
-        className='video-js video'
-        src='https://www.youtube.com/embed/lHVj_8k2sh8'
+        title={id}
+        width="1235"
+        height="529"
+        src={ source }
+        className="video-js video"
+        frameBorder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowFullScreen
       ></iframe>
     </div>
-  )
+  );
 }
 
 export default LessonVideo
