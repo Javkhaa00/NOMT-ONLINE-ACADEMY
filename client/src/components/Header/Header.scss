@@ -80,22 +80,23 @@ nav {
     .dropdown-content {
         background-color: transparent;
         box-shadow: none;
-        // width: 6vw;
-        a {
-            // margin-right: 1vw;
+        margin-top: 81px;
+        top: 0px !important;
+        
+        .dropdown_buttons {
             color: black;
             width: auto;
             &:hover {
                 background-color: transparent;
                 font-weight: 500;
-                font-size: 1.2vw;
+                font-size: 17px;
             }
-        }
-        li:hover {
-            background-color: transparent;
         }
         li {
             margin-right: 10vw;
+            &:hover {
+                background-color: transparent;
+            }
         }
     }
     .scrolldown {
@@ -160,6 +161,27 @@ nav {
             font-size: 17px !important;
             font-weight: 500;
             width: auto;
+        }
+    }
+    .dropdown-content {
+        background-color: transparent;
+        box-shadow: none;
+        // width: 6vw;
+        a {
+            // margin-right: 1vw;
+            color: black;
+            width: auto;
+            &:hover {
+                background-color: transparent;
+                font-weight: 500;
+                font-size: 100px;
+            }
+        }
+        li:hover {
+            background-color: transparent;
+        }
+        li {
+            margin-right: 10vw;
         }
     }
 }

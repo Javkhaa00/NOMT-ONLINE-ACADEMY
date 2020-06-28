@@ -178,42 +178,44 @@ export const lessonData = {
     }
   },
   monbusho: {
-    chemistry: {
+    math: {
       name: 'Билгүүн',
       image: 'bilguun',
       university: 'Tohoku university',
       score: 'Улсын физикийн олимпиадын тусгай байр',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'College-2015', link: '/video/https://youtu.be/4X85Sm1wWMQ', time: '01.16.09' },
+        { name: 'College-2016', link: '/video/https://youtu.be/83z4TLyUa1k', time: '01.28.44' },
+        { name: 'Log and Lim', link: '/video/https://youtu.be/dewjotGc7Uk', time: '01.04.31' },
+        { name: 'Ulamjlal', link: '/video/https://youtu.be/PsNPFvJ5KAs', time: '00.45.29' },
+        { name: 'University 2016 Anemsen', link: '/video/https://youtu.be/DDe_sVqHZWA', time: '01.09.54' },
+        { name: 'University 2016 B', link: '/video/https://youtu.be/smllP2xCUSE', time: '00.51.10' },
+        { name: 'Matrix', link: '/video/https://youtu.be/E9UFIgPY8KY', time: '01.34.00' },
+        { name: 'Integral', link: '/video/https://youtu.be/vD2cDHtrcwo', time: '00.36.09' }
       ]
     },
-    math: {
+    fizik: {
       name: 'Сайнбилэгт',
       image: 'sainbilegt',
       university: 'Tohoku university',
       score: 'Улсын физикийн олимпиадын мөнгө, хүрэл медал хүртсэн',
       price: "89'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Lesson-1: Kinematics', link: '/video/xoe5fWoOikM', time: '00.51.24' },
+        { name: 'Lesson-2: Part-1 Dynamics', link: '/video/XUugp7RxmbM', time: '00.35.37' },
+        { name: 'Lesson-2: Part-2 Energy and impulse', link: '/video/TgdZbDgo69Q', time: '00.29.19' },
+        { name: 'lesson-3: Molecular kinetic theory', link: '/video/plczs83eQeg', time: '00.29.37' },
+        { name: 'Lesson-4: Termodinamics', link: '/video/TpQdGNyXmyo', time: '00.38.04' },
+        { name: 'Lesson-5: Electrostatics', link: '/video/bgAxbybQ-X0', time: '00.32.51' },
+        { name: 'Lesson-6: Electric circuits Part-1', link: '/video/yvgIoQgz0wE', time: '00.37.33' },
+        { name: 'Lesson-6: Electric circuits Part-2', link: '/video/sXXbNySObeQ', time: '00.22.34' },
+        { name: 'Lesson-7: Part-1 Magnetics', link: '/video/ygPboPIrvP4', time: '00.22.23' },
+        { name: 'Lesson-7: Part-2 Induction', link: '/video/_vKbh3JSq6M', time: '00.30.51' },
+        { name: 'Lesson-8: Part-1 Oscillation and Wave', link: '/video/iHBQciDXEuk', time: '00.33.55' },
+        { name: 'Lesson-8: Part-2 Dopler', link: '/video/-ym9sZVqXiA', time: '00.16.05' },
+        { name: 'Lesson-9: Optics', link: '/video/gRZnA-W7HKQ', time: '00.38.28' },
+        { name: 'Lesson-10: Extra', link: '/video/j5JPb0O59xo', time: '00.37.04' }
       ]
     },
     japanese: {
@@ -322,16 +324,7 @@ export const lessonData = {
       score: 'Улсын физикийн олимпиадын мөнгө, хүрэл медал хүртсэн',
       price: "89'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Road to Japan', link: '/video/HZcUtAtjI3U', time: '00.31.32' }
       ]
     },
     us: {
@@ -341,13 +334,12 @@ export const lessonData = {
       score: 'Test score: SAT: 1490 SAT Math lvl2: 800 IELTS: 8.0',
       price: "89'000₮",
       lessons: [
-        { name: 'lesson-1', link: '/video/', time: '00.17.49' },
-        { name: 'lesson-2', link: '/video/', time: '00.23.14' },
-        { name: 'lesson-3', link: '/video/', time: '00.27.20' },
-        { name: 'lesson-4', link: '/video/', time: '00.11.32' },
-        { name: 'lesson-5', link: '/video/', time: '00.22.26' },
-        { name: 'lesson-6', link: '/video/', time: '00.26.52' },
-        { name: 'lesson-7', link: '/video/', time: '00.44.27' }
+        { name: 'Part 1 Back to The Basics', link: '/video/aS3W2_5iIvI', time: '00.17.49' },
+        { name: 'Part 2 Planning', link: '/video/w8KZS8p53kI', time: '00.23.14' },
+        { name: 'Part 3 Building Your College List', link: '/video/QU7PMwpaSn8', time: '00.27.20' },
+        { name: 'Part 4 Financing Your Education', link: '/video/EeqNjELUgLM', time: '00.11.32' }, 
+        { name: 'Part 5 How To Be The Student Colleges Want', link: '/video/o0uvlpwI2xo', time: '00.22.26' },
+        { name: 'Part 6 Common Application Coalition Application', link: '/video/BdIsMaFzyQE', time: '00.26.52' }
       ]
     }
   },

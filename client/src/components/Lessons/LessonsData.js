@@ -76,14 +76,14 @@ export const LESSON_UNITS = {
     ],
     monbusho: [
       {
-        specific: "math",
+        specific: "fizik",
         general: "monbusho",
         teacher: "САЙНБИЛЭГТ",
         uni: "The university of Tokyo Osaka",
         avatar: "sainbilegt"
       },
       {
-        specific: "chemistry",
+        specific: "math",
         general: "monbusho",
         teacher: "БИЛГҮҮН",
         uni: "",

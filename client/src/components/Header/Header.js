@@ -74,13 +74,12 @@ const Header = () => {
       </div>
       <div>
         {userInformation.name !== '' ? (
-          <Link
+          <div
             className='right buttonTransparent dropdown-trigger btn'
-            to='/#'
             data-target='dropdown1'
           >
             <p className='profileText black-text'>{userInformation.name}</p>
-          </Link>
+          </div>
         ) : (
           <>
             <Link
@@ -101,17 +100,17 @@ const Header = () => {
         )}
         <ul id='dropdown1' className='dropdown-content'>
           <li>
-            <Link className='right' to='/#'>
+            <Link className='dropdown_buttons' to='/#'>
               manage your profile
             </Link>
           </li>
           <li>
-            <Link className='right' to='/#'>
+            <Link className='dropdown_buttons' to='/#'>
               Худалдан авсан хичээл
             </Link>
           </li>
           <li>
-            <div style={{ paddingTop: '0' }} className='right' onClick={logOut}>
+            <div style={{ marginLeft: '15px' }} className='dropdown_buttons' onClick={logOut}>
               LOG OUT
             </div>
           </li>
