@@ -94,10 +94,10 @@ const TeacherPro = () => {
           <h4 style={{ textTransform: 'uppercase', margin: '0' }}>
             {teacherInformation[ID].lesson}
           </h4>
-          <h6 style={{ margin: 0 }} className='subtitle'>
+          <h6 style={{ margin: 0, marginTop: '10px' }} className='subtitle'>
             {teacherInformation[ID].Subject}
           </h6>
-          <h5 style={{ margin: '12px 170px 0px 0px', fontSize: '19px' }}>
+          <h5 style={{ margin: '20px 170px 0px 0px', fontSize: '19px' }}>
             {teacherInformation[ID].lessonPrice}
           </h5>
         </div>

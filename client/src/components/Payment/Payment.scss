@@ -1,5 +1,5 @@
 .payment {
-  height: 1750px;
+  height: 2200px;
   font-family: "Fira sans";
   margin-bottom: 0;
   width: auto;
@@ -65,10 +65,32 @@
   line-height: 25px;
 }
 
-.bundle-title {
+.bundleTitle {
   height: 80px;
   width: 243px;
   font-size: 65px;
   font-weight: bold;
   line-height: 80px;
+}
+
+.bundleInformation {
+    height: 36px;
+    width: 500px;
+    font-size: 30px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 120px;
+}
+
+.dundleInfoText {
+    height: 40px;
+    width: 989px;
+    font-size: 21px;
+    letter-spacing: 0.42px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0;
 }

@@ -247,7 +247,7 @@ const FrontPage = () => {
           to='/sign-up'
           className='btn frontPageButton frontPageBottomButton'
         >
-          <h6>Бүртгүүлэх</h6>
+          <h6 style={{marginTop: '7px'}}>Бүртгүүлэх</h6>
         </Link>
       </div>
     </div>
