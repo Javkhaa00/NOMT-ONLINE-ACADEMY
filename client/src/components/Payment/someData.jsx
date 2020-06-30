@@ -30,7 +30,7 @@ export const america = [
     }
 ]
 
-export const bundle = [
+export const sale = [
     {
         name: 'Багц-1',
         price: "30% хөнгөлөлт",
