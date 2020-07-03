@@ -110,9 +110,9 @@ export const lessonData = {
       ]
     },
     'math%20lvl%202': {
-      name: 'Хүслэн',
+      name: 'Оргилбат',
       image: 'huslen',
-      university: 'UC BERKELEY',
+      university: 'University of Colorado boulder',
       score: 'Хотын физикийн олимпиадын тэргүүн байр',
       price: "79'000₮",
       lessons: [

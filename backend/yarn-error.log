@@ -1,0 +1,53 @@
+Arguments: 
+  /opt/local/bin/node /opt/local/libexec/yarn/bin/yarn.js add node server.js
+
+PATH: 
+  /opt/local/bin:/opt/local/sbin:/opt/local/bin:/opt/local/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/local/bin:/opt/local/sbin
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  12.17.0
+
+Platform: 
+  darwin x64
+
+Trace: 
+  Error: EACCES: permission denied, unlink '/Users/batuch_ka/Desktop/test/NOMT-ONLINE-ACADEMY/backend/node_modules/.bin/JSONStream'
+
+npm manifest: 
+  {
+    "name": "nomt",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "dependencies": {
+      "express": "^4.17.1",
+      "firebase-tools": "^8.4.1",
+      "mongodb": "^3.5.8"
+    },
+    "devDependencies": {
+      "nodemon": "^2.0.4"
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "node server.js"
+    },
+    "repository": {
+      "type": "git",
+      "url": "git+https://github.com/Javkhaa00/NOMT.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+      "url": "https://github.com/Javkhaa00/NOMT/issues"
+    },
+    "homepage": "https://github.com/Javkhaa00/NOMT#readme"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

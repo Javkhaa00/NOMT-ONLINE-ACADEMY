@@ -71,16 +71,19 @@ const TeacherPro = () => {
               {' '}
               {teacherInformation[ID].name}{' '}
             </h4>
-            <h5 style={{ margin: '0px 0px 10px 0px' }}>
-              {' '}
-              {teacherInformation[ID].school}{' '}
-            </h5>
+            {teacherInformation[ID].school.map((cur, index) => (
+              <h5
+                style={{ margin: 0, display: 'flex', flexDirection: 'row' }}
+                key={index}
+              >
+                {cur}{' '}
+              </h5>
+            ))}
             {teacherInformation[ID].achievement.map((cur, index) => (
               <h5
                 style={{ margin: 0, display: 'flex', flexDirection: 'row' }}
                 key={index}
               >
-                {' '}
                 {cur}{' '}
               </h5>
             ))}
