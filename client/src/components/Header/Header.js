@@ -1,22 +1,25 @@
 import React, { useEffect, useContext } from 'react'
+import { useHistory } from "react-router-dom";
 import logo from '../assets/icons/logo2.png'
-import M from 'materialize-css/dist/js/materialize'
 import './Header.scss'
 import DataContext from '../mainContext'
 import { Link } from 'react-router-dom'
-import firebase from 'firebase'
+import { auth } from '../../firebase'
 
 const Header = () => {
-  const db = firebase.firestore()
+  const history = useHistory();
   const { userInformation } = useContext(DataContext)
 
+  const dropdown = () => {
+    document.getElementById("dropdown").style.display = "table";
+    document.body.addEventListener("click", listener);
+  };
+  const listener = () => {
+    document.getElementById("dropdown").style.display = "none";
+    document.body.removeEventListener("click", listener);
+  };
+  
   useEffect(() => {
-    const elems = document.querySelectorAll('.dropdown-trigger')
-    const instances = M.Dropdown.init(elems, {
-      constrainWidth: false,
-      coverTrigger: false
-    })
-    console.log(instances)
     const page = window.location.href.split('/')[
       window.location.href.split('/').length - 1
     ]
@@ -26,20 +29,7 @@ const Header = () => {
   }, [])
 
   const logOut = () => {
-    db.collection('users')
-      .get()
-      .then(querySnapshot => {
-        var count = 1;
-        querySnapshot.forEach(async doc => {
-          if (doc.data().email === userInformation.email) {
-            await db.collection('users').doc(count + '').set({
-              activity: ''
-            }, { merge: true })
-            window.location.href = '/';
-          }
-          count++
-        })
-      })
+    auth.signOut().then(() => {window.location.reload(false); history.push("/")})
   }
   return (
     <nav className=''>
@@ -76,29 +66,29 @@ const Header = () => {
         {userInformation.name !== '' ? (
           <div
             className='right buttonTransparent dropdown-trigger btn'
-            data-target='dropdown1'
+            onClick={() => dropdown()}
           >
             <p className='profileText black-text'>{userInformation.name}</p>
           </div>
         ) : (
-          <>
-            <Link
-              className='buttonSignIn black-text'
-              id='sign-in'
-              to='/sign-in'
-            >
-              Нэвтрэх |{' '}
+            <>
+              <Link
+                className='buttonSignIn black-text'
+                id='sign-in'
+                to='/sign-in'
+              >
+                Нэвтрэх |{' '}
+              </Link>
+              <Link
+                className='buttonSignUp black-text'
+                id='sign-up'
+                to='/sign-up'
+              >
+                Бүртгүүлэх
             </Link>
-            <Link
-              className='buttonSignUp black-text'
-              id='sign-up'
-              to='/sign-up'
-            >
-              Бүртгүүлэх
-            </Link>
-          </>
-        )}
-        <ul id='dropdown1' className='dropdown-content'>
+            </>
+          )}
+        <ul id='dropdown' className='dropdownContent'>
           <li>
             <Link className='dropdown_buttons' to='/#'>
               manage your profile
@@ -110,7 +100,7 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <div style={{ marginLeft: '15px' }} className='dropdown_buttons' onClick={logOut}>
+            <div style={{ marginLeft: '15px', cursor: 'pointer' }} className='dropdown_buttons' onClick={logOut}>
               LOG OUT
             </div>
           </li>

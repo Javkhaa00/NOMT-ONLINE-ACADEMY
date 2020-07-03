@@ -77,13 +77,15 @@ nav {
             box-shadow: none;
         }
     }
-    .dropdown-content {
+    .dropdownContent {
         background-color: transparent;
         box-shadow: none;
         margin-top: 81px;
         top: 0px !important;
         width: 240px;
-        
+        display: none;
+        position: absolute;
+        right: 300px;
         .dropdown_buttons {
             color: black;
             width: auto;

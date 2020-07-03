@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import './App.css'
-import axios from 'axios'
 import FrontPage from './components/FrontPage'
 import Footer from './components/Footer/footer'
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
@@ -14,8 +13,9 @@ import Payment from './components/Payment/Payment'
 import DataContext from './components/mainContext'
 import LessonVideo from './components/lessonvideo/lessonVideo'
 import firebase from 'firebase'
+import { auth } from './firebase'
 
-function App () {
+function App() {
   const [userInformation, setUserInformation] = useState({
     name: '',
     payed: [],
@@ -24,20 +24,22 @@ function App () {
 
   useEffect(() => {
     let db = firebase.firestore()
-    axios.get('https://api.ipify.org/?format=json').then(res => {
-      db.collection('users')
-        .get()
-        .then(querySnapshot => {
-          querySnapshot.forEach(doc => {
-            if (doc.data().activity === res.data.ip)
-              setUserInformation({
-                name: doc.data().name,
-                payed: doc.data().owned,
-                email: doc.data().email
-              })
-          })
-        })
-    })
+    auth.onAuthStateChanged((user) => {
+      if (user) {
+        var uid = user.uid;
+        db
+          .collection("users")
+          .doc(uid)
+          .get()
+          .then((data) => {
+            setUserInformation({
+              name: data.data().name,
+              payed: data.data().owned,
+              email: data.data().email
+            })
+          });
+      }
+    });
   }, [])
 
   return (

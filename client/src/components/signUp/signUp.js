@@ -2,9 +2,13 @@ import React, { useState } from 'react'
 import './signUp.scss'
 import Header from '../Header/Header'
 import Check from './check'
-import { createUser } from '../../firebase'
+import { useHistory } from "react-router-dom";
+import firebase from 'firebase'
+import { auth } from '../../firebase'
 
 const SignUp = () => {
+  const history = useHistory();
+  let db = firebase.firestore()
   const [fields, setFields] = useState({
     lastName: '',
     name: '',
@@ -15,8 +19,30 @@ const SignUp = () => {
   const registerclicked = () => {
     const resultOfCheck = Check()
     if (resultOfCheck.check === true) {
-      createUser(fields)
-      // document.forms["sign-up"].submit();
+      auth.createUserWithEmailAndPassword(fields.email, fields.password)
+        .then((cal) => {
+          db.collection('users').doc(cal.user.uid).set({
+            name: fields.name,
+            lastName: fields.lastName,
+            email: fields.email,
+            birth: fields.year + ' ' + fields.month + ' ' + fields.day,
+            owned: [''],
+            school: fields.school,
+            class: fields.grade,
+            phone: fields.phoneNumber
+          })
+          window.scrollTo({ top: 0 });
+          history.push('/')
+        })
+        .catch(function (error) {
+          var errorCode = (error.code).split('/')[1];
+          if (errorCode === 'invalid-email')
+            alert('Email хаягаа зөв бич нүү !!!')
+          else if (errorCode === 'email-already-in-use')
+            alert('Email бүртгэлтэй байна !!!')
+          else if (errorCode === 'weak-password')
+            alert('Нууц үг энгийн байна !!!')
+        });
     }
   }
 

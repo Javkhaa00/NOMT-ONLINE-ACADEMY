@@ -1,53 +1,39 @@
 import React, { useEffect } from 'react'
+import { useHistory } from "react-router-dom";
 import './signIn.scss'
 import Header from '../Header/Header'
 import Check from './check.jsx'
 import { Link } from 'react-router-dom'
-import firebase from 'firebase'
-import axios from 'axios'
+import { auth } from '../../firebase'
 
 const SingIn = () => {
+  const history = useHistory();
   useEffect(() => {
     if (
       window.location.href.split('/')[
-        window.location.href.split('/').length - 1
+      window.location.href.split('/').length - 1
       ] === 'error'
     )
       alert('invalid email or password')
   }, [])
 
   const singInClicked = () => {
-    let db = firebase.firestore()
     const result = Check()
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
     if (result.check === true) {
-      axios.get('https://api.ipify.org/?format=json').then(res => {
-        db.collection('users')
-          .get()
-          .then(querySnapshot => {
-            var count = 1
-            querySnapshot.forEach(async doc => {
-              if (
-                doc.data().email === email &&
-                doc.data().password === password
-              ) {
-                console.log(count)
-                await db.collection('users')
-                  .doc(count + '')
-                  .set(
-                    {
-                      activity: res.data.ip
-                    },
-                    { merge: true }
-                  )
-                window.location.href = '/'
-              }
-              count++
-            })
-            alert('make sure that')
-          })
-      })
+      auth
+        .signInWithEmailAndPassword(email, password).then(() => { window.scrollTo({ top: 0 }); history.push('/')})
+        .catch(function (error) {
+          var errorCode = (error.code).split('/')[1];
+          if (errorCode === 'invalid-email')
+            alert('Email хаягаа зөв бич нүү !!!')
+          else if (errorCode === 'user-not-found')
+            alert('Бүртгэлтэй бус Email байна !!!')
+          else if (errorCode === 'wrong-password')
+            alert('Нууц үг буруу байна !!!')
+
+        });
     }
   }
   return (
