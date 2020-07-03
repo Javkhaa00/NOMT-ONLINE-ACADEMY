@@ -3,7 +3,7 @@ export const COURSES = [
     { title: 'SAT Subjects ', id: 'satsubjects' },
     { title: 'IELTS & TOEFL', id: 'ieltstoefl' },
     { title: 'Monbusho', id: 'monbusho' },
-    { title: 'HSK', id: 'hsk' },
+    { title: 'HSK-Hanyu Shuiping Kaoshi', id: 'hsk' },
     { title: 'Undergraduate application process', id: 'undergraduate' },
     { title: 'Programming & Web designing', id: 'programm' }
 ]
@@ -25,10 +25,10 @@ export const LESSON_UNITS = {
         avatar: "tselmeg"
       },
       {
-        specific: "math",
+        specific: "mathematics",
         general: "sat reasoning",
         teacher: "ЭЗЭНБААТАР",
-        uni: "KANSAS UNIVERSITY",
+        uni: "University of Michingan",
         avatar: "ezenbaatar"
       }
       // ,
@@ -45,14 +45,14 @@ export const LESSON_UNITS = {
         specific: "physics",
         general: "sat subject",
         teacher: "ЦОЛМОН",
-        uni: "MIT",
+        uni: "Massachusetts Institute of Technology",
         avatar: "tsolmon"
       },
       {
         specific: "math lvl 2",
         general: "sat subject",
-        teacher: "ХҮСЛЭН",
-        uni: "UC BERKELEY",
+        teacher: "ОРГИЛБАТ",
+        uni: "University of Colorado Boulder",
         avatar: "huslen"
       },
 
@@ -62,38 +62,38 @@ export const LESSON_UNITS = {
         specific: "reading",
         general: "toefl",
         teacher: "БАЯСАГЛАН",
-        uni: "NYU SHANGHAI",
+        uni: "NYU Shanghai",
         avatar: "bayasgalan"
       },
       {
         specific: "listening",
         general: "ielts",
         teacher: "МАНДАХ",
-        uni: "MELBOURNE UNIVERSITY",
+        uni: "Melbourne University",
         avatar: "mandah"
       },
 
     ],
     monbusho: [
       {
-        specific: "fizik",
+        specific: "Physics",
         general: "monbusho",
         teacher: "САЙНБИЛЭГТ",
-        uni: "The university of Tokyo Osaka",
+        uni: "The University of Tokyo Osaka",
         avatar: "sainbilegt"
       },
       {
-        specific: "math",
+        specific: "mathematics",
         general: "monbusho",
         teacher: "БИЛГҮҮН",
-        uni: "",
+        uni: "The University of Tokyo Osaka",
         avatar: "bilguun"
       },
       {
         specific: "japanese",
         general: "monbusho",
         teacher: "Ялгум",
-        uni: "",
+        uni: "The University of Tokyo Osaka",
         avatar: "ylgum"
       }
     ],
@@ -125,7 +125,15 @@ export const LESSON_UNITS = {
         teacher: "АНУ",
         uni: "Tongji Medical University of Hust",
         avatar: "anu"
+      },
+      {
+        specific: "hsk-5",
+        general: "hsk",
+        teacher: "АНУ",
+        uni: "Tongji Medical University of Hust",
+        avatar: "anu"
       }
+
     ],
     undergraduate: [
       {
@@ -136,10 +144,10 @@ export const LESSON_UNITS = {
         avatar: "sainbilegt"
       },
       {
-        specific: "us",
+        specific: "USA",
         general: "us undergraduated",
         teacher: "НАМУУНГОО",
-        uni: "HARVARD",
+        uni: "Harvard University",
         avatar: "namuungoo"
       }
     ],
@@ -157,6 +165,13 @@ export const LESSON_UNITS = {
         teacher: "МӨНХЖАВХЛАН",
         uni: "",
         avatar: "javkhaa"
+      },
+      {
+        specific: "c++",
+        general: "programming",
+        teacher: "ЗОЛБОО",
+        uni: "",
+        avatar: "zolboo"
       }
     ]
   };

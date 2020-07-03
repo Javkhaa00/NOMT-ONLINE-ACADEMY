@@ -66,7 +66,7 @@ const Teachers = () => {
             image: 'tsolmon'
         },
         {
-            name: 'Хүслэн',
+            name: 'Оргилбат',
             lesson: 'Math level 2',
             image: 'huslen'
         },
@@ -112,7 +112,7 @@ const Teachers = () => {
             </div>
             <img alt="down" src={downButton} className="down_button_teachers circle"></img>
             <div className="teacher_cards">
-                <h3>ADMISSIONS PROCESS, SAR REASONNING</h3>
+                <h3>ADMISSIONS PROCESS, SAT REASONNING</h3>
                 <div className="cardContainer">
                     {
                         ADMISSIONS.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
