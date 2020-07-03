@@ -84,16 +84,17 @@ export const lessonData = {
       score: 'Test score: HSK6-256',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    essey: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
@@ -105,16 +106,7 @@ export const lessonData = {
       score: 'Test score: SAT Subject Test Physics оноо: 800',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
     'math%20lvl%202': {
@@ -124,20 +116,41 @@ export const lessonData = {
       score: 'Хотын физикийн олимпиадын тэргүүн байр',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    chemistry: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    biology: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    'American%20History': {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
-  ieltstoefl: {
+  ielts: {
     reading: {
       name: 'Баясгалан',
       image: 'bayasgalan',
@@ -145,16 +158,7 @@ export const lessonData = {
       score: '',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
     listening: {
@@ -164,16 +168,69 @@ export const lessonData = {
       score: '',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    writing: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    speaking: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    }
+  },
+  toefl: {
+    reading: {
+      name: 'Баясгалан',
+      image: 'bayasgalan',
+      university: 'NYU SHANGHAI',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    listening: {
+      name: 'Мандах',
+      image: 'mandah',
+      university: 'Melbourne Uni',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    writing: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    speaking: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
@@ -225,16 +282,17 @@ export const lessonData = {
       score: '',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    chemistry: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
@@ -246,16 +304,7 @@ export const lessonData = {
       score: 'Test score: HSK6-256',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
     'hsk-2': {
@@ -265,16 +314,7 @@ export const lessonData = {
       score: 'Test score: HSK6-256',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
     'hsk-3': {
@@ -284,16 +324,7 @@ export const lessonData = {
       score: 'Test score: HSK6-256',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
     'hsk-4': {
@@ -303,16 +334,7 @@ export const lessonData = {
       score: 'Test score: HSK6-256',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
@@ -337,9 +359,29 @@ export const lessonData = {
         { name: 'Part 1 Back to The Basics', link: '/video/aS3W2_5iIvI', time: '00.17.49' },
         { name: 'Part 2 Planning', link: '/video/w8KZS8p53kI', time: '00.23.14' },
         { name: 'Part 3 Building Your College List', link: '/video/QU7PMwpaSn8', time: '00.27.20' },
-        { name: 'Part 4 Financing Your Education', link: '/video/EeqNjELUgLM', time: '00.11.32' }, 
+        { name: 'Part 4 Financing Your Education', link: '/video/EeqNjELUgLM', time: '00.11.32' },
         { name: 'Part 5 How To Be The Student Colleges Want', link: '/video/o0uvlpwI2xo', time: '00.22.26' },
         { name: 'Part 6 Common Application Coalition Application', link: '/video/BdIsMaFzyQE', time: '00.26.52' }
+      ]
+    },
+    german: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    Hungary: {
+      name: '',
+      image: '',
+      university: '',
+      score: '',
+      price: "79'000₮",
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   },
@@ -351,16 +393,17 @@ export const lessonData = {
       score: '',
       price: "79'000₮",
       lessons: [
-        { name: 'HSK-1-1', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-2', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-3', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-4', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-5', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-6', link: '/video/', time: '00.27.09' },
-        { name: 'HSK-1-7', link: '/video/', time: '00.41.23' },
-        { name: 'HSK-1-8', link: '/video/', time: '00.23.00' },
-        { name: 'HSK-1-9', link: '/video/', time: '00.30.05' },
-        { name: 'HSK-1-10', link: '/video/', time: '00.41.23' }
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    'C++': {
+      name: 'Золбоо',
+      image: 'zolboo',
+      university: '',
+      score: '',
+      price: '79 000₮',
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
       ]
     }
   }

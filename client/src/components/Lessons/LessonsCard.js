@@ -13,6 +13,7 @@ import ylgum from '../assets/teachers/ylgum.png'
 import sainbilegt from '../assets/teachers/sainbilegt.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
+import zolboo from '../assets/teachers/zolboo.png'
 import './Lessons.scss'
 import { Link } from 'react-router-dom'
 import payed from '../assets/payed.png'
@@ -75,6 +76,7 @@ const avatarImg = avatar => {
   if (avatar === 'sainbilegt') return <img alt='saibbilegt' src={sainbilegt} />
   if (avatar === 'tselmeg') return <img alt='tselmeg' src={tselmeg} />
   if (avatar === 'tsolmon') return <img alt='tsolmon' src={tsolmon} />
+  if (avatar === 'zolboo') return <img alt='zolboo' src={zolboo} />
 }
 
 export default LessonsCard

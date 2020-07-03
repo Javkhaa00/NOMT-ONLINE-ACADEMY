@@ -1,7 +1,8 @@
 export const COURSES = [
     { title: 'SAT Reasoning', id: 'satreasoning' },
     { title: 'SAT Subjects ', id: 'satsubjects' },
-    { title: 'IELTS & TOEFL', id: 'ieltstoefl' },
+    { title: 'IELTS', id: 'ielts' },
+    { title: 'TOEFL', id: 'toefl' },
     { title: 'Monbusho', id: 'monbusho' },
     { title: 'HSK', id: 'hsk' },
     { title: 'Undergraduate application process', id: 'undergraduate' },
@@ -30,15 +31,14 @@ export const LESSON_UNITS = {
         teacher: "ЭЗЭНБААТАР",
         uni: "KANSAS UNIVERSITY",
         avatar: "ezenbaatar"
+      },
+      {
+        specific: "essey",
+        general: "sat reasoning",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
       }
-      // ,
-      // {
-      //   specific: "essey",
-      //   general: "sat reasoning",
-      //   teacher: "",
-      //   uni: "",
-      //   avatar: ""
-      // }
     ],
     satsubjects: [
       {
@@ -55,9 +55,30 @@ export const LESSON_UNITS = {
         uni: "UC BERKELEY",
         avatar: "huslen"
       },
+      {
+        specific: "chemistry",
+        general: "sat subject",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+      {
+        specific: "biology",
+        general: "sat subject",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+      {
+        specific: "American History",
+        general: "sat subject",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      }
 
     ],
-    ieltstoefl: [
+    ielts: [
       {
         specific: "reading",
         general: "toefl",
@@ -72,7 +93,50 @@ export const LESSON_UNITS = {
         uni: "MELBOURNE UNIVERSITY",
         avatar: "mandah"
       },
-
+      {
+        specific: "writing",
+        general: "ielts",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+      {
+        specific: "speaking",
+        general: "ielts",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+    ],
+    toefl: [
+      {
+        specific: "reading",
+        general: "toefl",
+        teacher: "БАЯСАГЛАН",
+        uni: "NYU SHANGHAI",
+        avatar: "bayasgalan"
+      },
+      {
+        specific: "listening",
+        general: "ielts",
+        teacher: "МАНДАХ",
+        uni: "MELBOURNE UNIVERSITY",
+        avatar: "mandah"
+      },
+      {
+        specific: "writing",
+        general: "ielts",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+      {
+        specific: "speaking",
+        general: "ielts",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
     ],
     monbusho: [
       {
@@ -95,6 +159,13 @@ export const LESSON_UNITS = {
         teacher: "Ялгум",
         uni: "",
         avatar: "ylgum"
+      },
+      {
+        specific: "chemistry",
+        general: "sat subject",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
       }
     ],
     hsk: [
@@ -141,6 +212,20 @@ export const LESSON_UNITS = {
         teacher: "НАМУУНГОО",
         uni: "HARVARD",
         avatar: "namuungoo"
+      },
+      {
+        specific: "german",
+        general: "german undergraduated",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
+      },
+      {
+        specific: "Hungary",
+        general: "Hungary undergraduated",
+        teacher: "Coming soon",
+        uni: "",
+        avatar: ""
       }
     ],
     programm: [
@@ -157,6 +242,13 @@ export const LESSON_UNITS = {
         teacher: "МӨНХЖАВХЛАН",
         uni: "",
         avatar: "javkhaa"
+      },
+      {
+        specific: "C++",
+        general: "programming",
+        teacher: "Золбоо",
+        uni: "",
+        avatar: "zolboo"
       }
     ]
   };

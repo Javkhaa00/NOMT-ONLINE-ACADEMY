@@ -12,6 +12,7 @@ import munguldei from '../assets/teachers/munguldei.png'
 import namuungoo from '../assets/teachers/namuungoo.png'
 import tselmeg from '../assets/teachers/tselmeg.png'
 import tsolmon from '../assets/teachers/tsolmon.png'
+import zolboo from '../assets/teachers/zolboo.png'
 import './TeacherCard.scss'
 import { Link } from 'react-router-dom'
 
@@ -113,11 +114,12 @@ const TeacherCard = cin => {
       return (
         <img className='teacherProfilePicture' alt='tsolmon' src={tsolmon} />
       )
+      if (image === 'zolboo')
+      return (
+        <img className='teacherProfilePicture' alt='zolboo' src={zolboo} />
+      )
   }
 
-  // const onclick = () => {
-  //   window.location.href = '/teacher/' + image
-  // }
   return (
     <Link className='card' to={'/teacher/' + image} onClick={() => window.scrollTo({top: 0})}>
       {teacherIntro()}

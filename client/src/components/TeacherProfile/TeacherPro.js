@@ -91,13 +91,13 @@ const TeacherPro = () => {
         </div>
 
         <div className='lesson-card lighten-5 z-depth-1'>
-          <h4 style={{ textTransform: 'uppercase', margin: '0' }}>
+          <h4 style={{ textTransform: 'uppercase', margin: '0', marginLeft: '20px' }}>
             {teacherInformation[ID].lesson}
           </h4>
-          <h6 style={{ margin: 0, marginTop: '10px' }} className='subtitle'>
+          <h6 style={{ margin: 0, marginTop: '10px', marginLeft: '20px' }} className='subtitle'>
             {teacherInformation[ID].Subject}
           </h6>
-          <h5 style={{ margin: '20px 170px 0px 0px', fontSize: '19px' }}>
+          <h5 style={{ margin: '10px 170px 0px 20px', fontSize: '19px' }}>
             {teacherInformation[ID].lessonPrice}
           </h5>
         </div>

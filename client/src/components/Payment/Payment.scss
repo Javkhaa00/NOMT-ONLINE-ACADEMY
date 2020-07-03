@@ -14,14 +14,14 @@
   height: 240px;
   width: 280px;
   border-radius: 20px;
-  margin-right: 30px;
+  margin-left: 20px;
   margin-top: 20px;
   background-image: url("../assets/card.png");
   background-size: 100% 100%;
 }
 
 .bundleContainer {
-  width: 1000px;
+  width: 920px;
   margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
@@ -93,4 +93,10 @@
     font-weight: 500;
     line-height: 25px;
     margin: 0;
+}
+
+.satBreaker {
+  margin-top: 40px;
+  font-size: 50px;
+  font-weight: bold;
 }

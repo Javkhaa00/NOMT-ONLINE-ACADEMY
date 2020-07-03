@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.598c2c23.chunk.css",
-    "main.js": "/static/js/main.16655aa0.chunk.js",
-    "main.js.map": "/static/js/main.16655aa0.chunk.js.map",
+    "main.css": "/static/css/main.5e33ca70.chunk.css",
+    "main.js": "/static/js/main.8fb59223.chunk.js",
+    "main.js.map": "/static/js/main.8fb59223.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.8f9ae683.js",
     "runtime-main.js.map": "/static/js/runtime-main.8f9ae683.js.map",
-    "static/js/2.f3eb975f.chunk.js": "/static/js/2.f3eb975f.chunk.js",
-    "static/js/2.f3eb975f.chunk.js.map": "/static/js/2.f3eb975f.chunk.js.map",
+    "static/js/2.7ad609d0.chunk.js": "/static/js/2.7ad609d0.chunk.js",
+    "static/js/2.7ad609d0.chunk.js.map": "/static/js/2.7ad609d0.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.f45810adc8fac92a2e5046f8982a5b95.js": "/precache-manifest.f45810adc8fac92a2e5046f8982a5b95.js",
+    "precache-manifest.27ce655bfdd888bb4bf256bc83034721.js": "/precache-manifest.27ce655bfdd888bb4bf256bc83034721.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.598c2c23.chunk.css.map": "/static/css/main.598c2c23.chunk.css.map",
-    "static/js/2.f3eb975f.chunk.js.LICENSE.txt": "/static/js/2.f3eb975f.chunk.js.LICENSE.txt",
+    "static/css/main.5e33ca70.chunk.css.map": "/static/css/main.5e33ca70.chunk.css.map",
+    "static/js/2.7ad609d0.chunk.js.LICENSE.txt": "/static/js/2.7ad609d0.chunk.js.LICENSE.txt",
     "static/media/Layer_1.png": "/static/media/Layer_1.6f241419.png",
     "static/media/FrontPage.scss": "/static/media/Nomt.64fbbb5b.png",
     "static/media/anu.png": "/static/media/anu.5a687bb2.png",
@@ -39,12 +39,13 @@
     "static/media/teach.png": "/static/media/teach.db95d153.png",
     "static/media/tselmeg.png": "/static/media/tselmeg.9e2d6c51.png",
     "static/media/tsolmon.png": "/static/media/tsolmon.46b6daec.png",
-    "static/media/ylgum.png": "/static/media/ylgum.b59b0af4.png"
+    "static/media/ylgum.png": "/static/media/ylgum.b59b0af4.png",
+    "static/media/zolboo.png": "/static/media/zolboo.7dd47b03.png"
   },
   "entrypoints": [
     "static/js/runtime-main.8f9ae683.js",
-    "static/js/2.f3eb975f.chunk.js",
-    "static/css/main.598c2c23.chunk.css",
-    "static/js/main.16655aa0.chunk.js"
+    "static/js/2.7ad609d0.chunk.js",
+    "static/css/main.5e33ca70.chunk.css",
+    "static/js/main.8fb59223.chunk.js"
   ]
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from '../Header/Header'
 import { Card } from './card'
-import { america, sat, sale, japan } from './someData'
+import { america, sat, sale, undergraduate, monbusho } from './someData'
 import './Payment.scss'
 
 const Payment = () => {
@@ -17,17 +17,23 @@ const Payment = () => {
       </div>
       <div className="bundleContainer">
         {
+          undergraduate.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
+        }
+      </div>
+      <div className="bundleContainer">
+        {
           america.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
         }
       </div>
       <div className="bundleContainer">
         {
-          sat.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
+          monbusho.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
         }
       </div>
+      <div className="satBreaker">SAT BREAKER</div>
       <div className="bundleContainer">
         {
-          japan.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
+          sat.map((cur, index) => <Card key={index} name={cur.name} price={cur.price} lessons={cur.lessons} />)
         }
       </div>
       <h1 className="bundleInformation">Төлбөр тооцооны мэдээлэл</h1>

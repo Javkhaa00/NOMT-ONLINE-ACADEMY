@@ -17,7 +17,8 @@ const teacherInformation = {
     school: 'Тэнцсэн сургууль: Tongji Medical University of Hust',
     achievement: ['HSK6-256'],
     littleStory: '',
-    Subject: 'HSK level 1,2,3,4',
+    lesson: 'HSK level 1,2,3,4',
+    Subject: 'HSK',
     lessonPrice: '89900₮'
   },
   namuungoo: {

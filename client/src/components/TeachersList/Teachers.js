@@ -10,11 +10,6 @@ import sofwareImage from '../assets/Layer_1.png'
 const Teachers = () => {
     const MONBUSHO = [
         {
-            name: 'Ану',
-            lesson: 'HSK Level 1, 2, 3, 4',
-            image: 'anu'
-        },
-        {
             name: 'Сайнбилэгт',
             lesson: 'Physics',
             image: 'sainbilegt'
@@ -29,6 +24,14 @@ const Teachers = () => {
             lesson: 'Japan',
             image: 'ylgum'
         }
+    ]
+
+    const HSK = [
+        {
+            name: 'Ану',
+            lesson: 'HSK Level 1, 2, 3, 4',
+            image: 'anu'
+        },
     ]
 
     const toefl = [
@@ -46,20 +49,10 @@ const Teachers = () => {
             name: 'Мандах',
             lesson: 'IELTS-Reading, Listening',
             image: 'mandah'
-        },
-        {
-            name: '',
-            lesson: '',
-            image: ''
         }
     ]
 
     const SAT = [
-        {
-            name: 'Мөнхжавхлан',
-            lesson: 'HTML, CSS',
-            image: 'javkha'
-        },
         {
             name: 'Цолмон',
             lesson: 'Physics',
@@ -69,14 +62,21 @@ const Teachers = () => {
             name: 'Хүслэн',
             lesson: 'Math level 2',
             image: 'huslen'
-        },
-        {
-            name: '',
-            lesson: '',
-            image: ''
         }
     ]
 
+    const PROGRAMMING = [
+        {
+            name: 'Мөнхжавхлан',
+            lesson: 'HTML, CSS',
+            image: 'javkha'
+        },
+        {
+            name: 'Золбоо',
+            lesson: 'C++',
+            image: 'zolboo'
+        }
+    ]
     const ADMISSIONS = [
         {
             name: 'Сайнбилэгт',
@@ -118,10 +118,22 @@ const Teachers = () => {
                         ADMISSIONS.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
                     }
                 </div>
-                <h3>HSK, MONBUSHO</h3>
+                <h3>SAT SUBJECTS</h3>
+                <div className="cardContainer">
+                    {
+                        SAT.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
+                    }
+                </div>
+                <h3>MONBUSHO</h3>
                 <div className="cardContainer">
                     {
                         MONBUSHO.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
+                    }
+                </div>
+                <h3>HSK</h3>
+                <div className="cardContainer">
+                    {
+                        HSK.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
                     }
                 </div>
                 <h3>TOEFL, IELTS</h3>
@@ -130,10 +142,10 @@ const Teachers = () => {
                         toefl.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
                     }
                 </div>
-                <h3>PROGRAMMING, SAT SUBJECTS</h3>
+                <h3>PROGRAMMING</h3>
                 <div className="cardContainer">
                     {
-                        SAT.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
+                        PROGRAMMING.map((cur, index) => <TeacherCard key={index} name={cur.name} lesson={cur.lesson} image={cur.image} />)
                     }
                 </div>
             </div>
