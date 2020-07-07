@@ -11,11 +11,11 @@ const Header = () => {
   const { userInformation } = useContext(DataContext)
 
   const dropdown = () => {
-    document.getElementById("dropdown").style.display = "table";
+    document.getElementById("dropdown1").style.display = "table";
     document.body.addEventListener("click", listener);
   };
   const listener = () => {
-    document.getElementById("dropdown").style.display = "none";
+    document.getElementById("dropdown1").style.display = "none";
     document.body.removeEventListener("click", listener);
   };
   
@@ -88,12 +88,7 @@ const Header = () => {
             </Link>
             </>
           )}
-        <ul id='dropdown' className='dropdownContent'>
-          <li>
-            <Link className='dropdown_buttons' to='/#'>
-              manage your profile
-            </Link>
-          </li>
+        <ul id='dropdown1' className='dropdownContent'>
           <li>
             <Link className='dropdown_buttons' to='/#'>
               Худалдан авсан хичээл

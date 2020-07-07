@@ -89,6 +89,7 @@ nav {
         .dropdown_buttons {
             color: black;
             width: auto;
+            height: 36px;
             &:hover {
                 background-color: transparent;
                 font-weight: 500;
@@ -108,7 +109,7 @@ nav {
 }
 
 
-@media only screen and (max-width: 1399px) {
+@media only screen and (max-width: 1440px) {
     nav {
         margin-top: 9px;
         margin-left: -179px;
@@ -164,5 +165,11 @@ nav {
             font-weight: 500;
             width: auto;
         }
+    }
+    .dropdownContent {
+        margin-top: 81px;
+        top: 0px !important;
+        width: 240px;
+        right: 150px !important;
     }
 }
