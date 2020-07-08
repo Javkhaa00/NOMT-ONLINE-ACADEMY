@@ -65,6 +65,7 @@
 }
 
 .lesson {
+  display: flex;
   text-transform: uppercase;
   font-weight: bold;
   text-transform: uppercase;
@@ -114,7 +115,7 @@
 }
 
 .lai {
-  margin-top: 34px;
+  margin-top: 57px;
 }
 
 
@@ -123,6 +124,12 @@
   margin: auto 0;
   width: 109px !important;
   height: 19px;
+}
+
+.icon {
+  width: 30px !important;
+  height: 30px;
+  margin-left: 10px;
 }
 
 @media only screen and (max-width: 1440px) {
@@ -238,7 +245,7 @@
   }
 
   .lai {
-    margin-top: 27px;
+    margin-top: 37px;
   }
 
   .payed {  

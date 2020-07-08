@@ -77,7 +77,7 @@ export const lessonData = {
         { name: 'Lesson-30', link: '/video/0BkmtExb440', time: '00.23.34' }
       ]
     },
-    math: {
+    mathematics: {
       name: 'Эзэнбаатар',
       image: 'ezenbaatar',
       university: 'Kansas',
@@ -235,7 +235,7 @@ export const lessonData = {
     }
   },
   monbusho: {
-    math: {
+    mathematics: {
       name: 'Билгүүн',
       image: 'bilguun',
       university: 'Tohoku university',
@@ -252,7 +252,7 @@ export const lessonData = {
         { name: 'Integral', link: '/video/https://youtu.be/vD2cDHtrcwo', time: '00.36.09' }
       ]
     },
-    fizik: {
+    Physics: {
       name: 'Сайнбилэгт',
       image: 'sainbilegt',
       university: 'Tohoku university',
@@ -349,7 +349,7 @@ export const lessonData = {
         { name: 'Road to Japan', link: '/video/HZcUtAtjI3U', time: '00.31.32' }
       ]
     },
-    us: {
+    USA: {
       name: 'Намуунгоо',
       image: 'namuungoo',
       university: 'Harvard',
@@ -396,12 +396,22 @@ export const lessonData = {
         { name: 'Working on it', link: '/video/', time: '' }
       ]
     },
-    'C++': {
+    'c++': {
       name: 'Золбоо',
       image: 'zolboo',
       university: '',
       score: '',
       price: '79 000₮',
+      lessons: [
+        { name: 'Working on it', link: '/video/', time: '' }
+      ]
+    },
+    css: {
+      name: 'Мөнхжавхлан',
+      image: 'javkhaa',
+      university: '',
+      score: '',
+      price: "79'000₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]

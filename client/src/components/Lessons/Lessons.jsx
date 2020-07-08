@@ -34,6 +34,7 @@ const Lessons = () => {
               uni={cur.uni}
               avatar={cur.avatar}
               generalNS={selectedLessonId}
+              flag={cur.flag}
             />
           ))}
         </div>
