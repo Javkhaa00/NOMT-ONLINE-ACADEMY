@@ -108,6 +108,9 @@ nav {
     }
 }
 
+.navbarMobile {
+    display: none;
+}
 
 @media only screen and (max-width: 1440px) {
     nav {
@@ -171,5 +174,18 @@ nav {
         top: 0px !important;
         width: 240px;
         right: 150px !important;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .navbar {
+        display: none !important;
+    }
+    .navbarMobile {
+        display: flex;
+        flex-direction: column;
+        width: 0;
+        position: absolute;
+        left: 0;
     }
 }

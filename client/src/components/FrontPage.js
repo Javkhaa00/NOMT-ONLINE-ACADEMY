@@ -49,10 +49,10 @@ const FrontPage = () => {
     <div className="mainDiv row">
       <Header />
       <div className="first-text row col l10 m10 offset-l1 offset-m1">
-        <div style={{ width: "613px", marginLeft: "25px" }}>
-          <h1 className="inspiration" id="inspiration">
+        <div style={{ width: "700px", marginLeft: "25px" }}>
+          <div className="inspiration" id="inspiration">
             Таны ирээдүйн өөртөө хийх хөрөнгө оруулалт
-          </h1>
+          </div>
           <h5>Залуу сурагчид өөрсдийн амжилтын туршлагаас хуваалцах болно.</h5>
         </div>
         <h1 className="intro col l6 m6 center">NOMT ONLINE ACADEMY</h1>
