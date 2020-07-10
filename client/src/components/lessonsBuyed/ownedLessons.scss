@@ -1,0 +1,24 @@
+.mainOwned {
+    background-image: url('../assets/bc.png');
+    margin: 0;
+    height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Fira sans";
+}
+
+.ownedTitle {
+    margin-top: 100px;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.ownedContent {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 865px;
+}

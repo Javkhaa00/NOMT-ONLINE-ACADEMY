@@ -11,7 +11,7 @@ const Header = () => {
   const { userInformation } = useContext(DataContext)
 
   const dropdown = () => {
-    document.getElementById("dropdown1").style.display = "table";
+    document.getElementById("dropdown1").style.display = "block";
     document.body.addEventListener("click", listener);
   };
   const listener = () => {
@@ -99,9 +99,9 @@ const Header = () => {
             </Link>
               </>
             )}
-          <ul id='dropdown1' className='dropdownContent'>
+          <ul id='dropdown1' className='dropdownContent no1'>
             <li>
-              <Link className='dropdown_buttons' to='/#'>
+              <Link className='dropdown_buttons' to='/owned'>
                 Худалдан авсан хичээл
             </Link>
             </li>
@@ -140,6 +140,23 @@ const Header = () => {
           Төлбөр тооцоо
         </Link>
         <div className="line"></div>
+        {userInformation.name !== '' ? (
+          <ul id='dropdown1' className='dropdownContent side-drop'>
+            <li>
+              <Link className='dropdown_buttons history' to='/owned'>
+                Худалдан авсан хичээл
+            </Link>
+            </li>
+            <div className="line"></div>
+            <li>
+              <div style={{ marginLeft: '15px', cursor: 'pointer' }} className='dropdown_buttons' onClick={logOut}>
+                LOG OUT
+            </div>
+            </li>
+          </ul>
+        ) : (
+            <div></div>
+          )}
       </div>
     </>
   )

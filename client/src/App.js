@@ -14,6 +14,7 @@ import DataContext from './components/mainContext'
 import LessonVideo from './components/lessonvideo/lessonVideo'
 import firebase from 'firebase'
 import { auth } from './firebase'
+import { OwnedLessons } from './components/lessonsBuyed/ownedLessons'
 
 function App() {
   const [userInformation, setUserInformation] = useState({
@@ -72,6 +73,9 @@ function App() {
           </Route>
           <Route path='/video'>
             <LessonVideo />
+          </Route>
+          <Route path='/owned'>
+            <OwnedLessons />
           </Route>
           <Route exact path='/'>
             <FrontPage />

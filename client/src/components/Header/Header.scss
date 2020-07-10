@@ -226,4 +226,18 @@ nav {
         height: 1px;
         background-color: white;
     }
+    .side-drop {
+        margin: 200px 0 0 30px;
+        width: auto;
+        .dropdown_buttons {
+            color: black;
+            margin: 0 !important;
+        }
+        .history {
+            width: 200px;
+        }
+    }
+    .no1 {
+        display: none !important;
+    }
 }

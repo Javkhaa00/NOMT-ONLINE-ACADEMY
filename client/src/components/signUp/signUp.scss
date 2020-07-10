@@ -179,7 +179,7 @@ body {
 
 @media only screen and (max-width: 1100px) {
   .uusgeh-container {
-    height: 150vh;
+    height: auto;
   }
 
   .down_button {
@@ -189,7 +189,7 @@ body {
   .sign-up-container {
     height: auto;
     width: auto;
-    margin: 0;
+    margin: 0 0 200px 0;
   }
   .sign-up-input {
     border: 43px !important;
