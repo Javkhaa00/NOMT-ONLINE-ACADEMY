@@ -40,7 +40,7 @@
 
 .sofware_intro {
   margin-top: 120px;
-  margin-bottom: 326px;
+  margin-bottom: 100px;
   height: 477px;
   width: 794px;
   display: flex;
@@ -108,5 +108,28 @@
     margin-top: 116px !important;
     height: 50px;
     width: 50px;
+  }
+}
+
+
+
+@media only screen and (max-width: 1100px) {
+  .aboutUsTitle {
+    margin-top: 135px;
+    display: flex;
+    .title {
+      margin-top: 70px;
+      h1 {
+        width: 490px;
+        font-size: 50px;
+        line-height: 50px;
+      }
+    }
+    .titleImage {
+      margin-left: 10px;
+      margin-top: 90px;
+      height: 322px;
+      width: 414px !important;
+    }
   }
 }

@@ -51,7 +51,7 @@ const SignUp = () => {
   }
 
   return (
-    <div className='register-container row'>
+    <div className='uusgeh-container row'>
       <Header />
       <div className='text-container row col l10 m10 offset-l1 offset-m1'>
         <div className='bold-text'>

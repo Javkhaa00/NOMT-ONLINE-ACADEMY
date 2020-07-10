@@ -12,7 +12,6 @@ body {
   margin-bottom: 346px !important;
 }
 
-
 .head-text {
   font-size: 30px;
   color: #222;
@@ -20,9 +19,8 @@ body {
   line-height: 36px;
   letter-spacing: 1px;
 }
-.register-container {
+.uusgeh-container {
   width: auto;
-  // height: 300vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -80,7 +78,7 @@ body {
   font-family: "Fira Sans" !important;
   color: #222 !important;
   font-size: 19px !important;
-  font-weight: bolder!important;
+  font-weight: bolder !important;
   padding-inline-start: 15px !important;
 }
 
@@ -104,41 +102,36 @@ body {
 .birth {
   display: flex;
   justify-content: row;
+  margin-bottom: 0px !important;
+  font-family: "Fira Sans" !important;
 
   .year {
-    width: 133px !important;
+    width: 133px;
     border: 2px solid #222 !important;
     border-radius: 114px !important;
     margin-right: 20px !important;
-    margin-bottom: 0px !important;
-    font-family: "Fira Sans" !important;
-    font-size: 19px !important;
-    font-weight: bolder!important;
-    padding-inline-start: 15px !important;
+    font-size: 19px;
+    font-weight: bolder;
+    padding-inline-start: 15px;
     text-align: center;
-    ;
   }
   .month {
-    width: 85px !important;
+    width: 85px;
     border: 2px solid #222 !important;
     border-radius: 114px !important;
     margin-right: 20px !important;
-    margin-bottom: 0px !important;
-    font-family: "Fira Sans" !important;
-    font-size: 19px !important;
-    font-weight: bolder!important;
-    padding-inline-start: 15px !important;
+    font-size: 19px;
+    font-weight: bolder;
+    padding-inline-start: 15px;
     text-align: center;
   }
   .day {
-    width: 85px !important;
+    width: 85px;
     border: 2px solid #222 !important;
     border-radius: 114px !important;
-    margin-bottom: 0px !important;
-    font-family: "Fira Sans" !important;
-    font-size: 19px !important;
-    font-weight: bolder!important;
-    padding-inline-start: 15px !important;
+    font-size: 19px;
+    font-weight: bolder;
+    padding-inline-start: 15px;
     text-align: center;
   }
 }
@@ -159,7 +152,7 @@ body {
   margin: 0 !important;
   text-transform: none;
   border-radius: 114px;
-  background-color: #3F83E8;
+  background-color: #3f83e8;
 }
 .bottom {
   width: 400px;
@@ -176,11 +169,84 @@ body {
   opacity: 0.5;
 }
 
-
 .error {
   border: 2px solid red !important;
 }
 
 .correction {
   border: 2px solid black !important;
+}
+
+@media only screen and (max-width: 1100px) {
+  .uusgeh-container {
+    height: 150vh;
+  }
+
+  .down_button {
+    margin-bottom: 100px !important;
+  }
+
+  .sign-up-container {
+    height: auto;
+    width: auto;
+    margin: 0;
+  }
+  .sign-up-input {
+    border: 43px !important;
+    width: 600px !important;
+    border-radius: 114px !important;
+    border: 2px solid #222 !important;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px !important;
+    padding: 20px 0 20px 30px !important;
+    box-shadow: 0 3px 0 0 #f44336;
+  }
+  .text-container {
+    margin-top: 200px;
+    height: auto !important;
+    min-height: unset !important;
+  }
+
+  .year {
+    border: 43px !important;
+    width: 198px !important;
+    border-radius: 114px !important;
+    border: 2px solid #222 !important;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px !important;
+    padding: 20px 0 20px 0px !important;
+    box-shadow: 0 3px 0 0 #f44336;
+  }
+  .month {
+    border: 43px !important;
+    width: 198px !important;
+    border-radius: 114px !important;
+    border: 2px solid #222 !important;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px !important;
+    padding: 20px 0 20px 0px !important;
+    box-shadow: 0 3px 0 0 #f44336;
+  }
+  .day {
+    border: 43px !important;
+    width: 198px !important;
+    border-radius: 114px !important;
+    border: 2px solid #222 !important;
+    line-height: 50px;
+    letter-spacing: 1px;
+    font-size: 40px !important;
+    padding: 20px 0 20px 0px !important;
+    box-shadow: 0 3px 0 0 #f44336;
+  }
+
+  .supp-text {
+    font-size: 40px;
+    line-height: 50px;
+    width: 640px;
+    margin-top: 13px;
+    text-align: center;
+  }
 }

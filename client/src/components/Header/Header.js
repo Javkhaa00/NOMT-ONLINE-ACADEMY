@@ -31,6 +31,16 @@ const Header = () => {
   const logOut = () => {
     auth.signOut().then(() => { window.location.reload(false); history.push("/") })
   }
+
+  const listenerBar = () => {
+    document.getElementById("sideBar").style.width = '0px';
+    document.body.removeEventListener("click", listener);
+  };
+
+  const popUp = () => {
+    document.getElementById('sideBar').style.width = '500px';
+    document.body.addEventListener("click", listenerBar);
+  }
   return (
     <>
       <nav className=''>
@@ -103,19 +113,33 @@ const Header = () => {
           </ul>
         </div>
       </nav>
-      <div className="navbarMobile">
-        <Link>
+      <img alt="menuBar" className="menuBar" src="https://img.icons8.com/ios-filled/64/000000/menu.png" onClick={() => popUp()} />
+      <div className="navbarMobile" id="sideBar">
+        <Link to="/lessons" className='side sideLessons black-text'>
           Сургалтууд
-            </Link>
-        <Link>
+        </Link>
+        <div className="line"></div>
+        <Link to="teachers" className='side black-text'>
           Бидний тухай
-            </Link>
-        <Link>
+        </Link>
+        <div className="line"></div>
+        <p
+          className='side black-text'
+          onClick={() =>
+            window.scrollTo({
+              top: document.body.scrollHeight,
+              left: 100,
+              behavior: 'smooth'
+            })
+          }
+        >
           Холбоо барих
-          </Link>
-        <Link>
+        </p>
+        <div className="line"></div>
+        <Link to="/payment" className='side black-text'>
           Төлбөр тооцоо
-          </Link>
+        </Link>
+        <div className="line"></div>
       </div>
     </>
   )
