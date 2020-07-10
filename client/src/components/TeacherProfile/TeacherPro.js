@@ -68,23 +68,19 @@ const TeacherPro = () => {
           {teacherImg()}
           <div className='text'>
             <h4 style={{ margin: '0px 0px 15px 0px' }}>
-              {' '}
-              {teacherInformation[ID].name}{' '}
+              {teacherInformation[ID].name}
             </h4>
-            {teacherInformation[ID].school.map((cur, index) => (
-              <h5
-                style={{ margin: 0, display: 'flex', flexDirection: 'row' }}
-                key={index}
-              >
-                {cur}{' '}
-              </h5>
-            ))}
+            <h5
+              style={{ margin: 0, display: 'flex', flexDirection: 'row' }}
+            >
+              {teacherInformation[ID].school}
+            </h5>
             {teacherInformation[ID].achievement.map((cur, index) => (
               <h5
                 style={{ margin: 0, display: 'flex', flexDirection: 'row' }}
                 key={index}
               >
-                {cur}{' '}
+                {cur}
               </h5>
             ))}
             <h5 style={{ marginTop: '39px' }}>

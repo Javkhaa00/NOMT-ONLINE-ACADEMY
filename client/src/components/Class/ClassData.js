@@ -5,7 +5,7 @@ export const lessonData = {
       image: 'tselmeg',
       university: 'UC Berkeley',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Lesson-1', link: '/video/eqycndPS-xg', time: '00.30.05' },
         { name: 'Lesson-2', link: '/video/iNGr9wAP2No', time: '00.27.09' },
@@ -43,7 +43,7 @@ export const lessonData = {
       image: 'tselmeg',
       university: 'UC Berkeley',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Lesson-1', link: '/video/sKZztEwOxtI', time: '00.20.00' },
         { name: 'Lesson-2', link: '/video/88bXaZBWAqU', time: '00.20.45' },
@@ -82,7 +82,7 @@ export const lessonData = {
       image: 'ezenbaatar',
       university: 'Kansas',
       score: 'Test score: HSK6-256',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -92,7 +92,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -104,7 +104,7 @@ export const lessonData = {
       image: 'tsolmon',
       university: 'MIT',
       score: 'Test score: SAT Subject Test Physics оноо: 800',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -114,7 +114,7 @@ export const lessonData = {
       image: 'huslen',
       university: 'University of Colorado boulder',
       score: 'Хотын физикийн олимпиадын тэргүүн байр',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -124,7 +124,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -134,7 +134,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -144,7 +144,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -156,7 +156,7 @@ export const lessonData = {
       image: 'bayasgalan',
       university: 'NYU SHANGHAI',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -166,7 +166,7 @@ export const lessonData = {
       image: 'mandah',
       university: 'Melbourne Uni',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -176,7 +176,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -186,7 +186,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -198,7 +198,7 @@ export const lessonData = {
       image: 'bayasgalan',
       university: 'NYU SHANGHAI',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -208,7 +208,7 @@ export const lessonData = {
       image: 'mandah',
       university: 'Melbourne Uni',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -218,7 +218,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -228,7 +228,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -240,7 +240,7 @@ export const lessonData = {
       image: 'bilguun',
       university: 'Tohoku university',
       score: 'Улсын физикийн олимпиадын тусгай байр',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'College-2015', link: '/video/https://youtu.be/4X85Sm1wWMQ', time: '01.16.09' },
         { name: 'College-2016', link: '/video/https://youtu.be/83z4TLyUa1k', time: '01.28.44' },
@@ -257,7 +257,7 @@ export const lessonData = {
       image: 'sainbilegt',
       university: 'Tohoku university',
       score: 'Улсын физикийн олимпиадын мөнгө, хүрэл медал хүртсэн',
-      price: "89'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Lesson-1: Kinematics', link: '/video/xoe5fWoOikM', time: '00.51.24' },
         { name: 'Lesson-2: Part-1 Dynamics', link: '/video/XUugp7RxmbM', time: '00.35.37' },
@@ -280,7 +280,7 @@ export const lessonData = {
       image: 'ylgum',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -290,7 +290,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -302,7 +302,7 @@ export const lessonData = {
       image: 'anu',
       university: 'Tongji Medical University of Hust',
       score: 'Test score: HSK6-256',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -312,7 +312,7 @@ export const lessonData = {
       image: 'anu',
       university: 'Tongji Medical University of Hust',
       score: 'Test score: HSK6-256',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -322,7 +322,7 @@ export const lessonData = {
       image: 'anu',
       university: 'Tongji Medical University of Hust',
       score: 'Test score: HSK6-256',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -332,7 +332,7 @@ export const lessonData = {
       image: 'anu',
       university: 'Tongji Medical University of Hust',
       score: 'Test score: HSK6-256',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -344,7 +344,7 @@ export const lessonData = {
       image: 'sainbilegt',
       university: 'Tohoku university',
       score: 'Улсын физикийн олимпиадын мөнгө, хүрэл медал хүртсэн',
-      price: "89'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Road to Japan', link: '/video/HZcUtAtjI3U', time: '00.31.32' }
       ]
@@ -354,7 +354,7 @@ export const lessonData = {
       image: 'namuungoo',
       university: 'Harvard',
       score: 'Test score: SAT: 1490 SAT Math lvl2: 800 IELTS: 8.0',
-      price: "89'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Part 1 Back to The Basics', link: '/video/aS3W2_5iIvI', time: '00.17.49' },
         { name: 'Part 2 Planning', link: '/video/w8KZS8p53kI', time: '00.23.14' },
@@ -369,7 +369,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -379,7 +379,7 @@ export const lessonData = {
       image: '',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -391,7 +391,7 @@ export const lessonData = {
       image: 'javkhaa',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -401,7 +401,7 @@ export const lessonData = {
       image: 'zolboo',
       university: '',
       score: '',
-      price: '79 000₮',
+      price: '59 900₮',
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]
@@ -411,7 +411,7 @@ export const lessonData = {
       image: 'javkhaa',
       university: '',
       score: '',
-      price: "79'000₮",
+      price: "59'900₮",
       lessons: [
         { name: 'Working on it', link: '/video/', time: '' }
       ]

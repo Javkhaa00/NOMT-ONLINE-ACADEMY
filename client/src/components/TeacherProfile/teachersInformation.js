@@ -80,11 +80,7 @@ const teacherInformation = {
   },
   huslen: {
     name: 'Оргилбат',
-    school: [
-      'Тэнцсэн сургуулиуд: ',
-      'University of Colorado Boulder',
-      'Drexel University'
-    ],
+    school: 'Тэнцсэн сургуулиуд: University of Colorado Boulder + Drexel University',
     achievement: [
       'Амжилтууд:',
       'Улсын физикийн олимпиадын хүрэл медаль',

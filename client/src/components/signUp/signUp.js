@@ -21,6 +21,7 @@ const SignUp = () => {
     if (resultOfCheck.check === true) {
       auth.createUserWithEmailAndPassword(fields.email, fields.password)
         .then((cal) => {
+          console.log(cal)
           db.collection('users').doc(cal.user.uid).set({
             name: fields.name,
             lastName: fields.lastName,
@@ -30,9 +31,10 @@ const SignUp = () => {
             school: fields.school,
             class: fields.grade,
             phone: fields.phoneNumber
+          }).then(() => {
+            window.scrollTo({ top: 0 });
+            history.push('/')
           })
-          window.scrollTo({ top: 0 });
-          history.push('/')
         })
         .catch(function (error) {
           var errorCode = (error.code).split('/')[1];
